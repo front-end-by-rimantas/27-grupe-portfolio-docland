@@ -11,40 +11,79 @@
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
+header {
+  background-color: coral;
+}
 /* header end */
 
 /* hero start */
+.hero {
+  background-color: aquamarine;
+}
 /* hero end */
 
 /* statistics start */
+.statistics {
+  background-color: darkolivegreen;
+}
 /* statistics end */
 
 /* counter start */
+.counter {
+  background-color: darksalmon;
+}
 /* counter end */
 
 /* what you learn start */
+.what-you-learn {
+  background-color: deepskyblue;
+}
 /* what you learn end */
 
 /* course syllabus start */
+.syllabus {
+  background-color: yellowgreen;
+}
 /* course syllabus end */
 
 /* course benefit start */
+.benefit {
+  background-color: blueviolet;
+}
 /* course benefit end */
 
 /* pricing start */
+.pricing {
+  background-color: goldenrod;
+}
 /* pricing end */
 
 /* reviews start */
+.reviews {
+  background-color: darkred;
+}
 /* reviews end */
 
-/* email form start */
-/* email form end */
+/* enrol form start */
+.enrol-form {
+  background-color: darkseagreen;
+}
+/* enrol form end */
 
 /* course instructor start */
+.course-instructor {
+  background-color: darkslateblue;
+}
 /* course instructor end */
 
 /* footer start */
+.footer {
+  background-color: deeppink;
+}
 /* footer end */
 
 /* back-to-top start */
+.to-top {
+  background-color: cadetblue;
+}
 /* back-to-top end */
