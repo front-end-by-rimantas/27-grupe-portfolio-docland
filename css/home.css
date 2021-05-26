@@ -14,7 +14,10 @@
 /* header start */
 header {
   background-color: coral;
+  display: inline-block;
+  display: flex;
 }
+
 /* header end */
 
 /* hero start */
