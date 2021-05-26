@@ -1,0 +1,18 @@
+.section-title {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.section-title.center {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
