@@ -34,21 +34,6 @@ header {
   background-color: darksalmon;
 }
 
-.counter .counter-closes > span {
-  display: inline-block;
-  background-color: aqua;
-  text-align: center;
-}
-
-.counter-times > div {
-  display: inline-block;
-}
-
-.counter-times > div > p {
-  width: 100%;
-  text-align: center;
-}
-
 /* counter end */
 
 /* what you learn start */
