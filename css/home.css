@@ -84,6 +84,7 @@ header {
   .row {
     flex-wrap: wrap;
   }
+  flex-wrap: wrap;
 }
 /* footer end */
 
