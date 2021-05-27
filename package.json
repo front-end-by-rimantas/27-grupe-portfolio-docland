@@ -1,7 +1,7 @@
 {
   "name": "11-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)\r ![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)\r ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)\r ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)",
   "main": "index.js",
   "scripts": {
     "dev": "live-server --port=3000",
@@ -11,6 +11,16 @@
   "author": "Rimantas Belovas",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "live": "^0.1.25-beta.0",
+    "live-server": "^1.2.1",
+    "server": "^1.0.33"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-end-by-rimantas/27-grupe-portfolio-docland.git"
+  },
+  "bugs": {
+    "url": "https://github.com/front-end-by-rimantas/27-grupe-portfolio-docland/issues"
+  },
+  "homepage": "https://github.com/front-end-by-rimantas/27-grupe-portfolio-docland#readme"
 }

@@ -8,6 +8,7 @@
 
 /* components import */
 @import './components/button.css';
+@import './components/pricing-card.css';
 
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
@@ -54,8 +55,19 @@ header {
 /* course benefit end */
 
 /* pricing start */
-.pricing {
-  background-color: goldenrod;
+.pricing h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.price-inverted-block > .btn {
+  background-color: #fff;
+  color: var(--color-secondary);
+}
+.price-inverted-block > .btn:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  transition: background 0.5s ease-in-out;
 }
 /* pricing end */
 
