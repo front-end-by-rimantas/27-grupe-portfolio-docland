@@ -16,6 +16,7 @@ header {
   background-color: coral;
   display: inline-block;
   display: flex;
+  float: right;
 }
 
 /* header end */
