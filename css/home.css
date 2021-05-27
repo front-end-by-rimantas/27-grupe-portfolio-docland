@@ -18,6 +18,11 @@ header {
   display: flex;
   float: right;
 }
+.container.header > .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 /* header end */
 
