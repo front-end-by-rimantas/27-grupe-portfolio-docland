@@ -80,6 +80,10 @@ header {
 /* footer start */
 .footer {
   background-color: deeppink;
+
+  .row {
+    flex-wrap: wrap;
+  }
 }
 /* footer end */
 
