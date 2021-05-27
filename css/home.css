@@ -80,12 +80,13 @@ header {
 /* footer start */
 .footer {
   background-color: deeppink;
-
-  .row {
-    flex-wrap: wrap;
-  }
+  display: flexbox;
+}
+.row {
+  display: flex;
   flex-wrap: wrap;
 }
+
 /* footer end */
 
 /* back-to-top start */
