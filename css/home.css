@@ -54,20 +54,8 @@ header {
 /* course benefit end */
 
 /* pricing start */
-.pricing h2 {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.price-inverted-block > .btn {
+.pricing {
   background-color: #fff;
-  color: var(--color-secondary);
-}
-.price-inverted-block > .btn:hover {
-  background-color: var(--color-primary);
-  color: #fff;
-  transition: background 0.5s ease-in-out;
-}
 /* pricing end */
 
 /* reviews start */
