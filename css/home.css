@@ -12,16 +12,22 @@
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
-header {
+.header {
   background-color: coral;
   display: inline-block;
-  display: flex;
-  float: right;
+  float: inherit;
 }
-.container.header > .row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.header.container {
+  display: inline-block;
+}
+
+.row.meniu {
+  float: left;
+}
+.meniu-links {
+}
+/*HAMBURGER*/
+meniu-hamburger {
 }
 
 /* header end */
