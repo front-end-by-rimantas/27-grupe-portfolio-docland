@@ -16,21 +16,62 @@
 .header {
   background-color: coral;
   display: inline-block;
-  float: inherit;
 }
 .header.container {
   display: inline-block;
 }
-
-.row.meniu {
-  float: left;
+.header.container > .row {
+  color: yellow;
+}
+.row .meniu-block {
+  background-color: aqua;
+  float: right;
+  justify-content: space-between;
+}
+.header-logo {
+  color: brown;
+}
+.logo-img {
+  position: absolute;
+  background-color: aliceblue;
+  padding: 20px 20px 20px;
 }
 .meniu-links {
+  float: right;
+  background-color: bisque;
+  padding: 20px 20px 20px;
+}
+.a {
+  padding: 20px 20px 20px;
 }
 /*HAMBURGER*/
-meniu-hamburger {
+.meniu-hamburger {
+  display: inline-block;
+  float: right;
+  padding: 20px 10px 20px;
+}
+@media (max-width: 990px) {
+  .meniu-block .meniu-links .a .meniu-btn {
+    display: none;
+  }
+  .meniu-hamburger {
+    float: right;
+    display: flex-end;
+  }
 }
 
+.meniu-block .meniu-links .a {
+  padding: 0 30px;
+}
+
+@media (max-width: 2300px) {
+  .meniu-block .meniu-links .a .meniu-btn {
+    padding: 0 30px;
+  }
+  .meniu-hamburger {
+    display: none;
+  }
+}
 /* header end */
 
 /* hero start */
