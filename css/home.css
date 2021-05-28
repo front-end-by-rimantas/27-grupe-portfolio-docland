@@ -2,6 +2,7 @@
 @import './base/reset.css';
 @import './base/layout.css';
 @import './base/variables.css';
+@import './base/common.css';
 
 /* 3rd-party import */
 @import './3rd-party/font-awesome.min.css';
@@ -95,6 +96,15 @@ meniu-hamburger {
 /* footer start */
 .footer {
   background-color: deeppink;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.subscribe-form {
+  float: left;
+  padding: 10%;
+  position: sticky;
 }
 /* footer end */
 
