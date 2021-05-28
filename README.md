@@ -3,15 +3,15 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# React portfolio
+# DocLand
 
 _27 group website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://front-end-by-rimantas.github.io/27-grupe-portfolio/
+Site published at: https://front-end-by-rimantas.github.io/27-grupe-portfolio-docland/
 
-Design: https://react.theme-land.com/theme-five
+Design: https://themelooks.org/demo/docland/html/home-course.html
 
 ## Project features
 
@@ -27,4 +27,10 @@ Design: https://react.theme-land.com/theme-five
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+Ieva: [Github](https://github.com/ssinare)
+Rūta: [Github](https://github.com/RutaMurav)
+Marijus: [Github](https://github.com/MarijusIL)
+Kristupas: [Github](https://github.com/KrisBu)
+Igoris: [Github](https://github.com/igoris12)
+Roman: [Github](https://github.com/RomanSaltis)
+Martynas: [Github](https://github.com/MartinZ96)
