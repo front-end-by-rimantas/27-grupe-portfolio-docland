@@ -81,6 +81,15 @@ header {
 .footer {
   background-color: deeppink;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.subscribe-form {
+  float: left;
+  padding: 10%;
+  position: sticky;
+}
 /* footer end */
 
 /* back-to-top start */
