@@ -1,0 +1,29 @@
+/* base import */
+@import '../css/base/reset.css';
+@import '../css/base/layout.css';
+@import '../css/base/variables.css';
+@import '../css/base/common.css';
+@import '../css/base/paragraph.css';
+
+/* 3rd-party import */
+@import '../css/3rd-party/font-awesome.min.css';
+
+/* components import */
+@import '../css/components/button.css';
+
+/* CUSTOM STYLES FOR JOB GRID GOES BELOW THIS COMMENT */
+
+/* header start */
+/* header end */
+
+/* title start */
+/* title end */
+
+/* jobgrid start */
+/* jobgrid end */
+
+/* footer start */
+/* footer end */
+
+/* back-to-top start */
+/* back-to-top end */

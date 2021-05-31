@@ -1,0 +1,11 @@
+.smParagraph {
+  color: var(--color-paragraph);
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+}
+
+.lgParagraph {
+  color: var(--color-paragraph);
+  font-family: var(--paragraph-font);
+  font-size: 25px;
+}
