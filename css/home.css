@@ -34,20 +34,41 @@
 }
 .meniu-block .meniu-links {
   background-color: beige;
+  justify-content: space-between;
+  line-height: 27px;
 }
 
 .meniu-block .meniu-link-home {
-  padding: 15px 15px 15px;
-  color: #5dd9c1;
+  padding: 15px 5px 15px;
+  color: var(--color-secondary);
   font: Hind, sans-serif;
   text-decoration: none;
 }
 
 .meniu-block .meniu-link-btn {
-  padding: 15px 15px 15px;
+  padding: 15px 5px 15px;
   color: #5c6b56;
   font: Hind, sans-serif;
   text-decoration: none;
+}
+.meniu-block .meniu-btn-Login {
+  padding: 4px 25px 10px;
+  color: #fbc006;
+  position: relative;
+  background-color: none;
+  border: 1px solid transparent;
+  font: Hind, sans-serif;
+  text-decoration: none;
+}
+.meniu-block .meniu-btn-JoinNow {
+  padding: 4px 25px 10px;
+  color: #fff;
+  text-decoration-line: none;
+  font: Hind, sans-serif;
+  position: relative;
+  background-color: #5dd9c1;
+  border: 1px solid transparent;
+  border-radius: 6px;
 }
 
 /*HAMBURGER*/
