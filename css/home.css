@@ -93,8 +93,8 @@
 /* statistics end */
 
 /* counter start */
-.counter {
-  background-color: darksalmon;
+.counter > .row {
+  background-color: red;
 }
 /* counter end */
 
