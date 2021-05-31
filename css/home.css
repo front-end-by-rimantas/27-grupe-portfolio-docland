@@ -15,7 +15,7 @@
 
 /* header start */
 .header {
-  background-color: coral;
+  background-color: #f8f9fa;
   display: inline-block;
 }
 .header.container {
@@ -23,8 +23,9 @@
 }
 
 .row .meniu-block {
-  background-color: aqua;
+  background-color: pink;
   float: right;
+  padding: 20px 20px 20px;
   justify-content: space-between;
 }
 .row .header-logo {
@@ -32,14 +33,24 @@
   position: absolute;
   padding: 20px 20px 20px;
 }
-.meniu-links {
-  float: right;
-  background-color: bisque;
-  padding: 20px 20px 20px;
+.meniu-block .meniu-links {
+  background-color: beige;
 }
-.a {
+
+.meniu-block .meniu-link-home {
   padding: 20px 20px 20px;
+  color: #5dd9c1;
+  font: Hind, sans-serif;
+  text-decoration: none;
 }
+
+.meniu-block .meniu-link-btn {
+  padding: 20px 20px 20px;
+  color: #5c6b56;
+  font: Hind, sans-serif;
+  text-decoration: none;
+}
+
 /*HAMBURGER*/
 .meniu-hamburger {
   float: right;
