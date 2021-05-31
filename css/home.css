@@ -26,12 +26,9 @@
   float: right;
   justify-content: space-between;
 }
-.header-logo {
-  color: brown;
-}
-.logo-img {
+.row .header-logo {
+  display: inline-block;
   position: absolute;
-  background-color: aliceblue;
   padding: 20px 20px 20px;
 }
 .meniu-links {
@@ -62,11 +59,11 @@
 }
 
 @media (max-width: 2300px) {
-  .meniu-block .meniu-links .a .meniu-btn {
-    padding: 0 30px;
-  }
   .meniu-hamburger {
     display: none;
+  }
+  .meniu-block .meniu-links .a .meniu-btn {
+    padding: 0 30px;
   }
 }
 /* header end */
