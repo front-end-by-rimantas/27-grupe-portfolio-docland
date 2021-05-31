@@ -20,10 +20,8 @@
 
 .container .row {
   height: fit-content;
-  float
 }
-.header-logo {
-}
+
 .row .meniu-block {
   float: right;
   padding: 20px 15px 20px;
@@ -37,7 +35,6 @@
   justify-content: space-between;
   line-height: 32px;
 }
-
 
 .meniu-links .meniu-link-home {
   padding: 15px 5px 15px;
@@ -75,7 +72,6 @@
   border: 1px solid transparent;
   border-radius: 6px;
 }
-
 
 /*HAMBURGER*/
 .meniu-hamburger {
