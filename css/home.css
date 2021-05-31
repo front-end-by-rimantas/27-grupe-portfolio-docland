@@ -93,9 +93,22 @@
 /* statistics end */
 
 /* counter start */
-.counter > .row {
+.counter > .row > .row {
   background-color: red;
 }
+
+.counter .content {
+  color: blue;
+}
+
+.counter .content > .value {
+  color: lavenderblush;
+}
+
+.counter .content > .title {
+  color: lavenderblush;
+}
+
 /* counter end */
 
 /* what you learn start */
