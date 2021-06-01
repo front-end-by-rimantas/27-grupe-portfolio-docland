@@ -10,7 +10,7 @@
 
 /* components import */
 @import './components/button.css';
-
+@import './components/timer.css';
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
@@ -93,21 +93,6 @@
 /* statistics end */
 
 /* counter start */
-.counter > .row > .row {
-  background-color: red;
-}
-
-.counter .content {
-  color: blue;
-}
-
-.counter .content > .value {
-  color: lavenderblush;
-}
-
-.counter .content > .title {
-  color: lavenderblush;
-}
 
 /* counter end */
 
