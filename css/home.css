@@ -108,6 +108,24 @@
 .syllabus {
   background-color: yellowgreen;
 }
+
+.syllabus > .syllabus-header {
+}
+
+.syllabus > .syllabus-header .syllabus-heading {
+}
+
+.syllabus > .syllabus-header .syllabus-download {
+}
+
+.syllabus > .syllabus-card > .syllabus-numeration > img {
+  height: 30px;
+  width: 30px;
+  display: block;
+}
+
+.syllabus > .syllabus-card > .syllabus-numeration > span {
+}
 /* course syllabus end */
 
 /* course benefit start */
