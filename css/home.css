@@ -106,26 +106,72 @@
 
 /* course syllabus start */
 .syllabus {
-  background-color: yellowgreen;
+  background-color: #5dd9c1;
 }
 
 .syllabus > .syllabus-header {
 }
 
 .syllabus > .syllabus-header .syllabus-heading {
+  font-family: var(--heading-font);
+  font-size: 36px;
 }
 
-.syllabus > .syllabus-header .syllabus-download {
+.syllabus > .syllabus-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px #c3c3c3;
+}
+.syllabus > .syllabus-card > .syllabus-numeration {
+  margin-top: 5px;
 }
 
 .syllabus > .syllabus-card > .syllabus-numeration > img {
-  height: 30px;
-  width: 30px;
+  height: 33px;
+  width: 33px;
   display: block;
 }
 
-.syllabus > .syllabus-card > .syllabus-numeration > span {
+.syllabus > .syllabus-card > .syllabus-numeration > .syllabus-week {
+  padding-top: 15px;
+  display: inline-block;
+  font-family: var(--heading-font);
+  font-size: 24px;
 }
+
+.syllabus > .syllabus-card > .course-content {
+  margin-top: 0;
+}
+
+.syllabus > .syllabus-card > .course-content > .course-content-title {
+  font-family: var(--heading-font);
+  font-size: 24px;
+}
+
+.syllabus > .syllabus-card > .course-content > .fa {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.syllabus > .syllabus-card > .course-content > .course-content-description {
+  padding-top: 25px;
+  font-family: var(--paragraph-font);
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #707070;
+}
+
+.syllabus > .syllabus-card > .course-content > .course-content-stat {
+  font-size: 13px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  margin-top: 13px;
+}
+
+.syllabus > .syllabus-download {
+}
+
 /* course syllabus end */
 
 /* course benefit start */
