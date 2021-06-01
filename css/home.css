@@ -127,11 +127,12 @@
   background-color: darkred;
 }
 
-.reviews > .row {
-  display: inline-block;
-}
+
 .reviews >.row >.first {
-width: 500px;
+display: inline-block;
+width: 35%;
+padding: 30px;
+margin-left: 10%;
 
 }
 @media only screen and (max-width: 1200px){
@@ -160,6 +161,7 @@ width: 300px;
 
 .reviews >.row >.second {
 width: 500px;
+display: inline-block;
 
 }
 @media only screen and (max-width: 1200px){
