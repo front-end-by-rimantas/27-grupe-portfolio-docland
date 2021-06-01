@@ -1,6 +1,6 @@
 
 function formatNumber(number) {
-    return number < 10 ? number + '0' : number
+    return number < 10 ? '0' + number : number
 }
 
 export { formatNumber };

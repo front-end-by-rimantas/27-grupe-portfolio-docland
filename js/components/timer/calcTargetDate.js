@@ -19,7 +19,7 @@ function calcTargetDate(targetDate) {
 
     const days = Math.floor(timeLeftSeconds / 60 / 60 / 24);
     timeLeftSeconds -= days * 60 * 60 * 24;
-    console.log(timeLeftSeconds);
+
     const hours = Math.floor(timeLeftSeconds / 60 / 60);
     timeLeftSeconds -= hours * 60 * 60;
 
