@@ -126,6 +126,66 @@
 .reviews {
   background-color: darkred;
 }
+
+.reviews > .row {
+  display: inline-block;
+}
+.reviews >.row >.first {
+width: 500px;
+
+}
+@media only screen and (max-width: 1200px){
+  .reviews >.row >.first {
+width: 400px;
+}
+}
+
+@media only screen and (max-width: 992px){
+  .reviews >.row >.first {
+width: 300px;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .reviews >.row >.first {
+width: 300px;
+}
+}
+
+@media only screen and (max-width: 576px){
+  .reviews >.row >.first {
+width: 300px;
+}
+}
+
+.reviews >.row >.second {
+width: 500px;
+
+}
+@media only screen and (max-width: 1200px){
+  .reviews >.row >.second {
+width: 400px;
+}
+}
+
+@media only screen and (max-width: 992px){
+  .reviews >.row >.second {
+width: 300px;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .reviews >.row >.second {
+width: 300px;
+}
+}
+
+@media only screen and (max-width: 576px){
+  .reviews >.row >.second {
+width: 300px;
+}
+}
+
 /* reviews end */
 
 /* enrol form start */
