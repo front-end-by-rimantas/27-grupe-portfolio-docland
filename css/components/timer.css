@@ -7,7 +7,7 @@
 
 .counter .contenBox {
     background-color: white;
-    padding: 80px 0px;
+    padding: 60px 0px;
     border-radius: 25px;
     box-shadow: 5px 5px 18px rgb(221, 208, 208);
 }
@@ -24,7 +24,7 @@
     background-color: var(--color-secondary);
     color: #2d7264;
     font-size: 25px;
-    padding: 10px 20px 15px 20px;
+    padding: 10px 15px 10px 15px;
     border-radius: 33px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -44,4 +44,15 @@
     text-align:center;
     font-family: var(--heading-font);
     color: var(--color-paragraph);
+}
+
+@media  (max-width: 490px) {
+.counter .value {
+    font-size: 30px;
+}
+
+.counter .title {
+    font-size: 15px;
+}
+
 }
