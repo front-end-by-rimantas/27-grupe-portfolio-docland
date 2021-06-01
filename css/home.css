@@ -74,9 +74,19 @@
 }
 
 /*HAMBURGER*/
-.meniu-hamburger {
+.meniu-hamburger .hamburger {
   float: right;
   padding: 20px 20px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  height: 35px;
+  width: 35;
+}
+.hamburger .fa {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #5c6b56;
 }
 @media (max-width: 990px) {
   .meniu-block .meniu-links .a .meniu-btn {
