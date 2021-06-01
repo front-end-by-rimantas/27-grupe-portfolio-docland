@@ -1,5 +1,9 @@
 /* base import */
 @import './base/reset.css';
+@import './base/layout.css';
+@import './base/variables.css';
+@import './base/common.css';
+@import './base/paragraph.css';
 
 /* 3rd-party import */
 @import './3rd-party/font-awesome.min.css';
@@ -8,3 +12,151 @@
 @import './components/button.css';
 
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
+
+/* header start */
+.header {
+  background-color: #f8f9fa;
+  display: inline-block;
+}
+.header.container {
+  display: inline-block;
+}
+
+.row .meniu-block {
+  background-color: pink;
+  float: right;
+  padding: 20px 20px 20px;
+  justify-content: space-between;
+}
+.row .header-logo {
+  display: inline-block;
+  position: absolute;
+  padding: 20px 20px 20px;
+}
+.meniu-block .meniu-links {
+  background-color: beige;
+}
+
+.meniu-block .meniu-link-home {
+  padding: 20px 20px 20px;
+  color: #5dd9c1;
+  font: Hind, sans-serif;
+  text-decoration: none;
+}
+
+.meniu-block .meniu-link-btn {
+  padding: 20px 20px 20px;
+  color: #5c6b56;
+  font: Hind, sans-serif;
+  text-decoration: none;
+}
+
+/*HAMBURGER*/
+.meniu-hamburger {
+  float: right;
+  padding: 20px 10px 20px;
+}
+@media (max-width: 990px) {
+  .meniu-block .meniu-links .a .meniu-btn {
+    display: none;
+  }
+  .meniu-hamburger {
+    float: right;
+    display: flex-end;
+  }
+}
+
+.meniu-block .meniu-links .a {
+  padding: 0 30px;
+}
+
+@media (max-width: 2300px) {
+  .meniu-hamburger {
+    display: none;
+  }
+  .meniu-block .meniu-links .a .meniu-btn {
+    padding: 0 30px;
+  }
+}
+/* header end */
+
+/* hero start */
+.hero {
+  background-color: aquamarine;
+}
+/* hero end */
+
+/* statistics start */
+.statistics {
+  background-color: darkolivegreen;
+}
+/* statistics end */
+
+/* counter start */
+.counter {
+  background-color: darksalmon;
+}
+/* counter end */
+
+/* what you learn start */
+.what-you-learn {
+  background-color: deepskyblue;
+}
+/* what you learn end */
+
+/* course syllabus start */
+.syllabus {
+  background-color: yellowgreen;
+}
+/* course syllabus end */
+
+/* course benefit start */
+.benefit {
+  background-color: blueviolet;
+}
+/* course benefit end */
+
+/* pricing start */
+.pricing {
+  background-color: goldenrod;
+}
+/* pricing end */
+
+/* reviews start */
+.reviews {
+  background-color: darkred;
+}
+/* reviews end */
+
+/* enrol form start */
+.enrol-form {
+  background-color: darkseagreen;
+}
+/* enrol form end */
+
+/* course instructor start */
+.course-instructor {
+  background-color: darkslateblue;
+}
+/* course instructor end */
+
+/* footer start */
+.footer {
+  background-color: deeppink;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.subscribe-form {
+  float: left;
+  padding: 10%;
+  position: sticky;
+}
+/* footer end */
+
+/* back-to-top start */
+.to-top {
+  background-color: cadetblue;
+}
+/* back-to-top end */
