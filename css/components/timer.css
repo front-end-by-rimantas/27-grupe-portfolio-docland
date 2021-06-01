@@ -9,7 +9,7 @@
     background-color: white;
     padding: 80px 0px;
     border-radius: 25px;
-    box-shadow: 5px 5px 18px gray;
+    box-shadow: 5px 5px 18px rgb(221, 208, 208);
 }
 
 .counter > .row > .contenBox > .row {
