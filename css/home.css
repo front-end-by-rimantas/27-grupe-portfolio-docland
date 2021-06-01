@@ -106,7 +106,6 @@
 
 /* course syllabus start */
 .syllabus {
-  background-color: #5dd9c1;
 }
 
 .syllabus > .syllabus-header {
@@ -124,6 +123,7 @@
 }
 .syllabus > .syllabus-card > .syllabus-numeration {
   margin-top: 5px;
+  position: relative;
 }
 
 .syllabus > .syllabus-card > .syllabus-numeration > img {
@@ -134,9 +134,10 @@
 
 .syllabus > .syllabus-card > .syllabus-numeration > .syllabus-week {
   padding-top: 15px;
-  display: inline-block;
+  display: block;
   font-family: var(--heading-font);
-  font-size: 24px;
+  font-size: 23px;
+  font-weight: 600;
 }
 
 .syllabus > .syllabus-card > .course-content {
@@ -145,7 +146,7 @@
 
 .syllabus > .syllabus-card > .course-content > .course-content-title {
   font-family: var(--heading-font);
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .syllabus > .syllabus-card > .course-content > .fa {
@@ -169,7 +170,18 @@
   margin-top: 13px;
 }
 
-.syllabus > .syllabus-download {
+.syllabus .syllabus-end-donwload {
+  margin-top: 15px;
+}
+
+.syllabus .syllabus-download {
+  text-decoration: none;
+  color: #000;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  border: 1px solid var(--color-secondary);
+  padding: 1em 2em;
+  border-radius: 5px;
 }
 
 /* course syllabus end */
