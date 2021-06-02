@@ -14,9 +14,48 @@
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
-.mobile-responsive-meniu {
+.vertical-meniu {
+  display: inline-block;
   position: fixed;
   background-color: #fff;
+  padding: 25px;
+  right: 0;
+  top: 0;
+  width: 350px;
+  height: fit-content;
+  z-index: 99999;
+}
+.vertical-meniu-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  float: right;
+  border: none;
+  background-color: transparent;
+  height: 23px;
+  width: 30px;
+  margin-top: 0;
+  margin-left: 0;
+  font-size: 23px;
+  color: #5c6b56;
+}
+.meniu-block-vertical {
+  justify-content: left;
+  padding-top: 35px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.meniu-buttons-column {
+  list-style: none;
+}
+.btn-submeniu {
+  float: right;
+  color: #5c6b56;
+  margin-top: 12px;
+  font-size: 12px;
 }
 #header {
   background-color: #f8f9fa;
@@ -43,14 +82,23 @@
   text-decoration: none;
   line-height: 32px;
 }
+.meniu-submeniu .meniu-link-home {
+  padding: 15px 5px 15px;
+  color: var(--color-secondary);
+  font: Hind, sans-serif;
+  text-decoration: none;
+  line-height: 32px;
+}
 
-.meniu-links .meniu-link-btn {
+.meniu-link-btn {
   padding: 15px 5px 15px;
   color: #5c6b56;
   text-decoration: none;
   line-height: 32px;
 }
-
+.btn-submeniu > .fa {
+  position: fixed;
+}
 .meniu-block .meniu-buttons > a.meniu-btn-Login {
   color: var(--color-primary);
   position: relative;
@@ -86,6 +134,9 @@
   border-bottom: 0 5px;
   text-underline-position: under;
 }
+.vertical-meniu:hover {
+    flood-opacity: ;
+}
 
 .meniu-hamburger .hamburger {
   float: right;
@@ -99,6 +150,15 @@
   color: #5c6b56;
 }
 
+@keyframes (max-width: 990px) {
+    .vertical-meniu {
+        from {left: 0px;}
+  to {left: 400px;}
+        animation 5s;
+    }
+  
+}
+
 @media (min-width: 991px) {
   .meniu-links
     .a
@@ -107,6 +167,9 @@
     .meniu-btn-Login
     .meniu-btn-JoinNow {
     padding: 0 30px;
+  }
+  .vertical-meniu {
+    display: none;
   }
 }
 /* header end */
