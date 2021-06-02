@@ -1,0 +1,28 @@
+.what-you-learn .content {
+    display: inline-block;
+   
+}
+
+.what-you-learn .content .img-box {
+    display:inline-block;
+    width: 250px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.what-you-learn .content img {
+   width: 100%;
+   display: inline-block;
+  
+}
+
+.what-you-learn .content .img-box h3{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 19px;
+    
+}
+
