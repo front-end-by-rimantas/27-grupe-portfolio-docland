@@ -14,15 +14,13 @@
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
-.header {
+#header {
   background-color: #f8f9fa;
-  display: inline-block;
+  position: sticky;
+  top: 0;
+  margin-top: 0;
   vertical-align: middle;
-  padding: 20px 0;
-}
-
-.container {
-  display flex: align-items: center;
+  padding: 0;
 }
 
 .row .meniu-block {
@@ -35,7 +33,7 @@
   padding: 20px 20px 20px;
 }
 .meniu-block {
-
+  align-items: center;
 }
 .meniu-links .meniu-link-home {
   padding: 15px 5px 15px;
@@ -53,7 +51,6 @@
 }
 
 .meniu-block .meniu-buttons > a.meniu-btn-Login {
-  
   color: var(--color-primary);
   position: relative;
   background-color: transparent;
@@ -62,22 +59,32 @@
   padding-bottom: 4px;
   font-size: 17px;
   text-decoration: none;
-  border-bottom: 1px solid var(--color-primary) ;
+  border-bottom: 1px solid var(--color-primary);
   vertical-align: -8px;
   line-height: 32px;
 }
-.meniu-block .meniu-buttons > a.meniu-btn-JoinNow {
+.meniu-btn-JoinNow {
   padding: 4px 25px 10px;
   color: #fff;
   text-decoration-line: none;
   background-color: var(--color-secondary);
-font-size: 16px;
-  transition:all 0.3s;
+  font-size: 16px;
+  transition: all 0.3s;
+  cursor: pointer;
   transition-timing-function: ease;
   transition-delay: 0s;
   shape-rendering: auto;
 }
-
+.btn.meniu-btn-JoinNow:hover {
+  background-color: var(--color-primary);
+}
+.meniu-link-btn:hover {
+  color: var(--color-secondary);
+}
+.meniu-btn-Login:hover {
+  border-bottom: 0 5px;
+  text-underline-position: under;
+}
 
 .meniu-hamburger .hamburger {
   float: right;
