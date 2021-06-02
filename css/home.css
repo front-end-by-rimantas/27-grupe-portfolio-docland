@@ -71,11 +71,13 @@
   color: #fff;
   text-decoration-line: none;
   background-color: var(--color-secondary);
+font-size: 16px;
   transition:all 0.3s;
   transition-timing-function: ease;
   transition-delay: 0s;
   shape-rendering: auto;
 }
+
 
 .meniu-hamburger .hamburger {
   float: right;
