@@ -4,6 +4,7 @@
 @import './base/variables.css';
 @import './base/common.css';
 @import './base/paragraph.css';
+@import './base/syllabus.css';
 
 /* 3rd-party import */
 @import './3rd-party/font-awesome.min.css';
@@ -106,7 +107,7 @@
 
 /* course syllabus start */
 
-.syllabus > .syllabus-header .syllabus-heading {
+/* .syllabus > .syllabus-header .syllabus-heading {
   font-family: var(--heading-font);
   font-size: 36px;
 }
@@ -154,12 +155,12 @@
 .syllabus > .syllabus-card > .course-content-workaround {
   position: relative;
   grid-area: heading;
+  display: flex;
 }
 
 .syllabus > .syllabus-card .course-content-title {
   font-family: var(--heading-font);
   font-size: 23px;
-
   align-self: center;
 }
 
@@ -169,7 +170,7 @@
   font-weight: 600;
   font-size: 30px;
   right: 0;
-  top: -20px;
+  top: -0px;
 }
 
 .syllabus > .syllabus-card > .course-content-description {
@@ -184,10 +185,11 @@
   grid-area: stats;
 }
 
-.syllabus > .syllabus-card > .single-content-stat {
+.syllabus > .syllabus-card .single-content-stat {
   font-size: 13px;
   font-family: var(--heading-font);
-  font-weight: 500;
+  font-weight: 600;
+  padding-right: 23px;
 }
 
 .syllabus .syllabus-end-donwload {
@@ -202,7 +204,7 @@
   border: 1px solid var(--color-secondary);
   padding: 1em 2em;
   border-radius: 5px;
-}
+} */
 
 /* course syllabus end */
 
