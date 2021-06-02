@@ -16,10 +16,13 @@
 /* header start */
 .header {
   background-color: #f8f9fa;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 0;
 }
 
-.container .row {
-  height: fit-content;
+.container {
+  display flex: align-items: center;
 }
 
 .row .meniu-block {
@@ -31,49 +34,49 @@
   position: absolute;
   padding: 20px 20px 20px;
 }
-.meniu-block .meniu-links {
-  justify-content: space-between;
-  line-height: 32px;
-}
+.meniu-block {
 
+}
 .meniu-links .meniu-link-home {
   padding: 15px 5px 15px;
   color: var(--color-secondary);
   font: Hind, sans-serif;
   text-decoration: none;
+  line-height: 32px;
 }
-.meniu-block .meniu-buttons {
-  justify-content: space-between;
-  line-height: 27px;
-}
+
 .meniu-links .meniu-link-btn {
   padding: 15px 5px 15px;
   color: #5c6b56;
-  font: Hind, sans-serif;
   text-decoration: none;
+  line-height: 32px;
 }
-.meniu-block .meniu-btn-Login {
-  padding: 4px 25px 10px;
-  color: #fbc006;
+
+.meniu-block .meniu-buttons > a.meniu-btn-Login {
+  
+  color: var(--color-primary);
   position: relative;
   background-color: transparent;
-  border: 1px solid transparent;
-  font: Hind, sans-serif;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 4px;
+  font-size: 17px;
   text-decoration: none;
-  border-radius: 6px;
+  border-bottom: 1px solid var(--color-primary) ;
+  vertical-align: -8px;
+  line-height: 32px;
 }
-.meniu-block .meniu-btn-JoinNow {
+.meniu-block .meniu-buttons > a.meniu-btn-JoinNow {
   padding: 4px 25px 10px;
   color: #fff;
   text-decoration-line: none;
-  font: Hind, sans-serif;
-  position: relative;
-  background-color: #5dd9c1;
-  border: 1px solid transparent;
-  border-radius: 6px;
+  background-color: var(--color-secondary);
+  transition:all 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  shape-rendering: auto;
 }
 
-/*HAMBURGER*/
 .meniu-hamburger .hamburger {
   float: right;
   padding: 20px 20px 20px;
@@ -81,32 +84,20 @@
   background-color: transparent;
   border: none;
   height: 35px;
-  width: 35;
 }
 .hamburger .fa {
   font-size: 20px;
   font-weight: lighter;
   color: #5c6b56;
 }
-@media (max-width: 990px) {
-  .meniu-block .meniu-links .a .meniu-btn {
-    display: none;
-  }
-  .meniu-hamburger {
-    float: right;
-    display: flex-end;
-  }
-}
 
-.meniu-block .meniu-links .a {
-  padding: 0 30px;
-}
-
-@media (max-width: 2300px) {
-  .meniu-hamburger {
-    display: none;
-  }
-  .meniu-block .meniu-links .a .meniu-btn {
+@media (min-width: 991px) {
+  .meniu-links
+    .a
+    .meniu-link-btn
+    .meniu-link-home
+    .meniu-btn-Login
+    .meniu-btn-JoinNow {
     padding: 0 30px;
   }
 }
