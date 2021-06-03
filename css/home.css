@@ -134,8 +134,8 @@
   border-bottom: 0 5px;
   text-underline-position: under;
 }
-.vertical-meniu:hover {
-    flood-opacity: ;
+.vertical-meniu:animation {
+  animation: 5s;
 }
 
 .meniu-hamburger .hamburger {
@@ -148,15 +148,6 @@
   font-size: 20px;
   font-weight: lighter;
   color: #5c6b56;
-}
-
-@keyframes (max-width: 990px) {
-    .vertical-meniu {
-        from {left: 0px;}
-  to {left: 400px;}
-        animation 5s;
-    }
-  
 }
 
 @media (min-width: 991px) {
