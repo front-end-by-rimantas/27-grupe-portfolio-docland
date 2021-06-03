@@ -12,6 +12,7 @@
 /* components import */
 @import './components/button.css';
 @import './components/timer.css';
+@import './components/carousel.css';
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
@@ -179,7 +180,22 @@
 /* statistics end */
 
 /* counter start */
+.what-you-learn h2 {
+  font-family: var(--heading-font);
+  font-weight:780;
+  font-size: 40px;
+}
 
+.what-you-learn button {
+ padding:10px 20px;
+ background: #9ff1e1;
+ border: 0;
+ border-radius: 5px;
+ margin-right: 5px;
+ font-size: 30px;
+ color: #1d7c69;
+ cursor: pointer;
+ transition: 0.4s;
 /* counter end */
 
 /* what you learn start */
