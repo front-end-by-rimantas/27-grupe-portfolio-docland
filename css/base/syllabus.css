@@ -99,6 +99,10 @@
 
 .syllabus .syllabus-end-download {
   margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .syllabus .syllabus-download {
