@@ -60,6 +60,7 @@
   position: relative;
   grid-area: heading;
   display: flex;
+  z-index: 1;
 }
 
 .syllabus > .syllabus-card .course-content-title {
