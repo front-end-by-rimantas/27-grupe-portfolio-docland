@@ -180,6 +180,10 @@
 /* statistics end */
 
 /* counter start */
+
+/* counter end */
+
+/* what you learn start */
 .what-you-learn h2 {
   font-family: var(--heading-font);
   font-weight:780;
@@ -196,12 +200,6 @@
  color: #1d7c69;
  cursor: pointer;
  transition: 0.4s;
-/* counter end */
-
-/* what you learn start */
-.what-you-learn {
-  background-color: deepskyblue;
-}
 /* what you learn end */
 
 /* course syllabus start */
