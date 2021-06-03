@@ -1,6 +1,11 @@
 // IMPORT
 import { renderTimer } from './components/timer/timer.js';
 // header import start
+//import { header } from './components/header/Header.js;
+////header();
+//addEventListener('click', () => {
+
+//})
 // header import end
 
 // hero import start
