@@ -4,6 +4,7 @@
 @import './base/variables.css';
 @import './base/common.css';
 @import './base/paragraph.css';
+@import './base/syllabus.css';
 
 /* 3rd-party import */
 @import './3rd-party/font-awesome.min.css';
@@ -11,7 +12,7 @@
 /* components import */
 @import './components/button.css';
 @import './components/benefit.css';
-
+@import './components/timer.css';
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
@@ -94,9 +95,7 @@
 /* statistics end */
 
 /* counter start */
-.counter {
-  background-color: darksalmon;
-}
+
 /* counter end */
 
 /* what you learn start */
@@ -106,9 +105,7 @@
 /* what you learn end */
 
 /* course syllabus start */
-.syllabus {
-  background-color: yellowgreen;
-}
+
 /* course syllabus end */
 
 /* course benefit start */
