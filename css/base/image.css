@@ -1,0 +1,23 @@
+.behindImgTop{
+    display: inline-block;
+    z-index: -1;
+    visibility: visible;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    position:relative;
+    left: -60px;
+    top: -580px;
+
+}
+
+.behindImgBottom{
+    display: inline-block;
+    z-index: -1;
+    animation-duration: 0;
+    animation-delay: 0;
+    position:relative;
+    left: 352px;
+    top: -430px;
+    transform: rotate(90deg);
+}
+
