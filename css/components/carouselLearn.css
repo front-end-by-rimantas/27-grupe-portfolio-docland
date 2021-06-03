@@ -1,0 +1,21 @@
+.corouselLearn {
+    width: 100%;
+}
+
+.corouselLearn .gallery {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.corouselLearn > .gallery .list {
+    display: inline-block;
+    width: 100%;
+}
+
+.corouselLearn .list > .item {
+    width: 100%;
+    float: left;
+    border: 1px solid #000;
+
+}
