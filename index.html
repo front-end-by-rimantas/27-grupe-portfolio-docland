@@ -12,27 +12,68 @@
 
 <body>
     <!-- Header start -->
-    <header class="header container">
-        <div class="row col-12" style="background-color: gray;">
-            <div class="header-logo col-lg-2 col-sm-4">
-                <img src="./img/headerLogo.png" alt="logo DocLand">
-            </div>
+    <div class="vertical-meniu">
+        <div class=" vertical-meniu-header">
+            <a href="https://themelooks.org/demo/docland/html/index.html"><img src="./img/headerLogo.png" alt="logo DocLand"></a>
+            <button class="close-btn">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <div class="meniu-block-vertical">
+            <ul class="meniu-buttons-column">
+                <li class="meniu-submeniu">
+                    <span class="btn-submeniu"><i class="fa fa-caret-right"></i></span>
+                    <a class="meniu-link-home" href="#">Home</a>
+                    <ul></ul>
+                </li>
+                <li><a class="meniu-link-btn" href="#">Pricing</a>
+                </li>
+                <li>
+                    <span class="btn-submeniu"><i class="fa fa-caret-right"></i></span>
+                    <a class="meniu-link-btn" href="#">Career</a>
+                    <ul></ul>
+                </li>
+                <li>
+                    <span class="btn-submeniu"><i class="fa fa-caret-right"></i></span>
+                    <a class="meniu-link-btn" href="#">Pages</a>
+                    <ul></ul>
+                </li>
+                <li>
+                    <span class="btn-submeniu"><i class="fa fa-caret-right"></i></span>
+                    <a class="meniu-link-btn" href="#">Blog</a>
+                    <ul></ul>
+                </li>
+                <li>
+                    <span class="btn-submeniu"><i class="fa fa-caret-right"></i></span>
+                    <a class="meniu-link-btn" href="#">Contact</a>
+                    <ul></ul>
+                </li>
+            </ul>
+        </div>
 
-            <div class="meniu-block hidden visible-lg col-lg-9 ml-lg-1">
-                <div class="meniu-links reverse-lg">
+    </div>
+    <header class="container" id="header">
+        <div class="row col-12">
+            <div class="header-logo col-lg-2 col-sm-4">
+                <a href="https://themelooks.org/demo/docland/html/index.html"><img src="./img/headerLogo.png" alt="logo DocLand"></a>
+            </div>
+            <div class="row meniu-block hidden visible-lg col-lg-9 ml-lg-1">
+                <div class="meniu-buttons reverse-lg">
+                    <a class="meniu-btn-Login" href="#">Login</a>
+                    <a class="btn meniu-btn-JoinNow" href="#">Join Now</a>
+                </div>
+                <nav class="meniu-links reverse-lg">
                     <a class="meniu-link-home" href="#">Home</a>
                     <a class="meniu-link-btn" href="#">Pricing</a>
                     <a class="meniu-link-btn" href="#">Career</a>
                     <a class="meniu-link-btn" href="#">Pages</a>
                     <a class="meniu-link-btn" href="#">Blog</a>
                     <a class="meniu-link-btn" href="#">Contact</a>
-                    <button class="meniu-btn"><a href="#">Login</a></button>
-                    <button class="meniu-btn"><a href="#">Join Now</a></button>
-                </div>
+                </nav>
             </div>
-            <div class="meniu-hamburger visible hidden-lg col-sm-2 col-md-2" style="float: right;">
-                <nav>Hamburger</nav>
-
+            <div class="row meniu-hamburger visible hidden-lg col-sm-2 col-md-2" style="float:right;">
+                <button class="hamburger reverse-sm"><i class="fa fa-bars"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -85,28 +126,12 @@
 
     <!-- Countdown timer start -->
     <div class="counter container">
-        <div class="row">
-            <div class="row col-12 col-md-6 col-lg-6 ml-md-3 ml-lg-3" style="background-color: beige;">
-                <div class="col-4 ml-4">
-                    <span>Closes in</span>
+        <div class="row ">
+            <div class="contenBox col-12 col-md-8 col-lg-6 ml-md-2 ml-lg-3">
+                <div class="closes">
+                    <span class="closeText">Closes in</span>
                 </div>
-                <div class="row col-12">
-                    <div class="col-3">
-                        <p>12</p>
-                        <p>days</p>
-                    </div>
-                    <div class="col-3">
-                        <p>12</p>
-                        <p>hours</p>
-                    </div>
-                    <div class="col-3">
-                        <p>00</p>
-                        <p>Minutes</p>
-                    </div>
-                    <div class="col-3">
-                        <p>13</p>
-                        <p>Seconds</p>
-                    </div>
+                <div id="content" class="row">
                 </div>
             </div>
         </div>
@@ -150,122 +175,95 @@
     <!-- What you learn.. end -->
 
     <!-- Course Syllabus start -->
-    <div class="syllabus container">
-        <div class="row">
-            <div class="col-12 col-md-5">
-                <h2>Course Syllabus</h2>
-            </div>
+    <div class="syllabus">
+        <div class="syllabus-header">
+            <h2 class="section-title syllabus-heading">Course Syllabus</h2>
+            <a href="#" class="syllabus-download">Download Syllabus</a>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div>Left side
-                    <div>svg</div>
-                    <h3>Week 1</h3>
-                </div>
+        <div class="syllabus-card">
+            <div class="syllabus-numeration">
+                <img src="./img/course-syllabus-img/calendarIcon.png" class="syllabus-calendar" alt="calendar">
+                <span class="syllabus-week section-subtitle">Week 1</span>
             </div>
-            <div class="col-12">
-                <div>Right side
-                    <button>(arrow up)</button>
-                    <h3>Introduction To UX Design?</h3>
-                    <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
-                </div>
-                <div>
-                    <span>3 hours to complete</span>
-                    <span>3 Lectures</span>
-                    <span>2 videos</span>
-                </div>
-                <div>Drop down list + icons + time + link or icon</div>
+            <div class="course-content-workaround">
+                <h3 class="course-content-title section-subtitle">Introduction To UX Design?</h3>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div>Left side
-                    <div>svg</div>
-                    <h3>Week 2</h3>
-                </div>
-            </div>
-            <div class="col-12">
-                <div>Right side
-                    <button>(arrow up)</button>
-                    <h3>UX Strategy & Formula</h3>
-                    <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
-                </div>
-                <div>
-                    <span>3 hours to complete</span>
-                    <span>3 Lectures</span>
-                    <span>2 videos</span>
-                </div>
-                <div>Drop down list + icons + time + link or icon</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div>Left side
-                    <div>svg</div>
-                    <h3>Week 3</h3>
-                </div>
-            </div>
-            <div class="col-12">
-                <div>Right side
-                    <button>(arrow up)</button>
-                    <h3>Talking About Empathize & Define</h3>
-                    <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
-                </div>
-                <div>
-                    <span>3 hours to complete</span>
-                    <span>3 Lectures</span>
-                    <span>2 videos</span>
-                </div>
-                <div>Drop down list + icons + time + link or icon</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div>Left side
-                    <div>svg</div>
-                    <h3>Week 4</h3>
-                </div>
-            </div>
-            <div class="col-12">
-                <div>Right side
-                    <button>(arrow up)</button>
-                    <h3>Ideate, Iterate, Prototype & Test</h3>
-                    <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
-                </div>
-                <div>
-                    <span>3 hours to complete</span>
-                    <span>3 Lectures</span>
-                    <span>2 videos</span>
-                </div>
-                <div>Drop down list + icons + time + link or icon</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div>Left side
-                    <div>svg</div>
-                    <h3>Week 5</h3>
-                </div>
-            </div>
-            <div class="col-12">
-                <div>Right side
-                    <button>(arrow up)</button>
-                    <h3>Build Industry Related UX Portfolio</h3>
-                    <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
-                </div>
-                <div>
-                    <span>3 hours to complete</span>
-                    <span>3 Lectures</span>
-                    <span>2 videos</span>
-                </div>
-                <div>Drop down list + icons + time + link or icon</div>
+            <p class="course-content-description">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+            <div class="course-content-stats">
+                <span class="single-content-stat">3 hours to complete</span>
+                <span class="single-content-stat">3 Lectures</span>
+                <span class="single-content-stat">2 videos</span>
             </div>
 
         </div>
-        <div class="row">
-            <div class="col-12">
-                <button><a href="#">Download Syllabus</a></button>
+        <div class="syllabus-card">
+            <div class=" syllabus-numeration">
+                <img src="./img/course-syllabus-img/calendarIcon.png" class="syllabus-calendar ml-1" alt="calendar">
+                <span class="syllabus-week section-subtitle">Week 2</span>
             </div>
+            <div class="course-content-workaround">
+                <h3 class="course-content-title section-subtitle">UX Strategy & Formula</h3>
+            </div>
+            <p class="course-content-description">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+            <div class="course-content-stats">
+                <span class="single-content-stat">3 hours to complete</span>
+                <span class="single-content-stat">3 Lectures</span>
+                <span class="single-content-stat">2 videos</span>
+            </div>
+
+        </div>
+        <div class="syllabus-card">
+            <div class="syllabus-numeration">
+                <img src="./img/course-syllabus-img/calendarIcon.png" class="syllabus-calendar ml-1" alt="calendar">
+                <span class="syllabus-week section-subtitle">Week 3</span>
+            </div>
+            <div class="course-content-workaround">
+                <h3 class="course-content-title section-subtitle">Talking About Empathize & Define</h3>
+            </div>
+            <p class="course-content-description">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+            <div class="course-content-stats">
+                <span class="single-content-stat">3 hours to complete</span>
+                <span class="single-content-stat">3 Lectures</span>
+                <span class="single-content-stat">2 videos</span>
+            </div>
+
+        </div>
+        <div class="syllabus-card">
+            <div class="syllabus-numeration">
+                <img src="./img/course-syllabus-img/calendarIcon.png" class="syllabus-calendar ml-1" alt="calendar">
+                <span class="syllabus-week section-subtitle">Week 4</span>
+            </div>
+            <div class="course-content-workaround">
+                <h3 class="course-content-title section-subtitle">Ideate, Iterate, Prototype & Test</h3>
+            </div>
+            <p class="course-content-description">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+            <div class="course-content-stats">
+                <span class="single-content-stat">3 hours to complete</span>
+                <span class="single-content-stat">3 Lectures</span>
+                <span class="single-content-stat">2 videos</span>
+            </div>
+
+        </div>
+        <div class="syllabus-card">
+            <div class="syllabus-numeration">
+                <img src="./img/course-syllabus-img/calendarIcon.png" class="syllabus-calendar ml-1" alt="calendar">
+                <span class="syllabus-week section-subtitle">Week 5</span>
+            </div>
+            <div class="course-content-workaround">
+                <h3 class="course-content-title section-subtitle">Build Industry Related UX Portfolio</h3>
+            </div>
+            <p class="course-content-description">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+            <div class="course-content-stats">
+                <span class="single-content-stat">3 hours to complete</span>
+                <span class="single-content-stat">3 Lectures</span>
+                <span class="single-content-stat">2 videos</span>
+            </div>
+
+        </div>
+        <div class="syllabus-end-download">
+
+            <a href="#" class="syllabus-download">Download Syllabus</a>
+
         </div>
     </div>
     <!-- Course Syllabus end -->
@@ -346,28 +344,36 @@
 
     <!-- Student reviews start -->
     <div class="reviews container">
-        <div class="row">
-            <div class="col-12 col-lg-5">
-                <h2>Student Reviews</h2>
+        <div class="row" style="background-color: grey;">
+            <div class="col-12 col-md-5 ml-md-1" style="background-color: green;">
+                <h2 class="section-title" style="background-color: blue;">Student Reviews</h2>
             </div>
-            <div class="hidden visible-lg col-lg-2 reverse-lg ">
+            <div class="hidden visible-lg col-lg-2 reverse-lg " style="background-color: red;">
                 <button>Left</button>
                 <button>Right</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <img src="#" alt="Person">
-                <img src="#" alt="Rating 4.5 stars">
+        <div class="row grid-container" style="background-color: aqua;">
+            <div class="first">
+                <img class="taylor" src="./img/student-reviews-img/sarahTaylor.png" alt="Person">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-o checked"></span>
                 <h5>Sarah Taylor</h5>
-                <p>The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
+                <p class="smParagraph">The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
             </div>
 
-            <div class="col-12 col-md-6">
-                <img src="#" alt="Person">
-                <img src="#" alt="Rating 4.5 stars">
+            <div class="second">
+                <img class="taylor" src="./img/student-reviews-img/dorjiTaylor.png" alt="Person">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-o checked"></span>
                 <h5>Dorji Taylor</h5>
-                <p>The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
+                <p class="smParagraph">The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
             </div>
 
 
@@ -375,21 +381,21 @@
                 <img src="#" alt="Person">
                 <img src="#" alt="Rating 4.5 stars">
                 <h5>Dorji Taylor</h5>
-                <p>The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
+                <p class="smParagraph">The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 ml-3 col-sm-4 ml-sm-2 col-md-2 ml-md-4">
-                <h2><strong>4.85/5</strong></h2>
-                <span>Average Ratings</span>
+        <div class="row" style="background-color: green;">
+            <div class="col-6 ml-3 col-sm-4 ml-sm-2 col-md-2 ml-md-4" style="background-color: blue;">
+                <h2 class="section-title" style="background-color: grey;"><strong>4.85/5</strong></h2>
+                <span style="background-color: yellow;">Average Ratings</span>
             </div>
-            <div class="col-6 ml-3 col-sm-4 ml-sm-0 col-md-2">
-                <h2><strong>15.4k</strong></h2>
-                <span>Student Ratings</span>
+            <div class="col-6 ml-3 col-sm-4 ml-sm-0 col-md-2" style="background-color: blanchedalmond;">
+                <h2 class="section-title" style="background-color: rosybrown;"><strong>15.4k</strong></h2>
+                <span style="background-color: fuchsia;">Student Ratings</span>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 ml-3 col-sm-4 ml-sm-4 ml-md-5">
+        <div class="row" style="background-color: yellow;">
+            <div class="col-6 ml-3 col-sm-4 ml-sm-4 ml-md-5" style="background-color: blue;">
                 <a href="">View All Reviews</a>
             </div>
         </div>

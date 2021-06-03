@@ -4,78 +4,164 @@
 @import './base/variables.css';
 @import './base/common.css';
 @import './base/paragraph.css';
+@import './base/syllabus.css';
 
 /* 3rd-party import */
 @import './3rd-party/font-awesome.min.css';
 
 /* components import */
 @import './components/button.css';
-
+@import './components/timer.css';
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
-.header {
-  background-color: #f8f9fa;
+.vertical-meniu {
   display: inline-block;
+  position: fixed;
+  background-color: #fff;
+  padding: 25px;
+  right: 0;
+  top: 0;
+  width: 350px;
+  height: fit-content;
+  z-index: 99999;
 }
-.header.container {
-  display: inline-block;
+.vertical-meniu-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  float: right;
+  border: none;
+  background-color: transparent;
+  height: 23px;
+  width: 30px;
+  margin-top: 0;
+  margin-left: 0;
+  font-size: 23px;
+  color: #5c6b56;
+}
+.meniu-block-vertical {
+  justify-content: left;
+  padding-top: 35px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.meniu-buttons-column {
+  list-style: none;
+}
+.btn-submeniu {
+  float: right;
+  color: #5c6b56;
+  margin-top: 12px;
+  font-size: 12px;
+}
+#header {
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  margin-top: 0;
+  vertical-align: middle;
+  padding: 0;
 }
 
 .row .meniu-block {
-  background-color: pink;
   float: right;
-  padding: 20px 20px 20px;
-  justify-content: space-between;
 }
 .row .header-logo {
-  display: inline-block;
   position: absolute;
-  padding: 20px 20px 20px;
 }
-.meniu-block .meniu-links {
-  background-color: beige;
+.meniu-block {
+  align-items: center;
 }
-
-.meniu-block .meniu-link-home {
-  padding: 20px 20px 20px;
-  color: #5dd9c1;
+.meniu-links .meniu-link-home {
+  padding: 15px 5px 15px;
+  color: var(--color-secondary);
   font: Hind, sans-serif;
   text-decoration: none;
+  line-height: 32px;
+}
+.meniu-submeniu .meniu-link-home {
+  padding: 15px 5px 15px;
+  color: var(--color-secondary);
+  font: Hind, sans-serif;
+  text-decoration: none;
+  line-height: 32px;
 }
 
-.meniu-block .meniu-link-btn {
-  padding: 20px 20px 20px;
+.meniu-link-btn {
+  padding: 15px 5px 15px;
   color: #5c6b56;
-  font: Hind, sans-serif;
   text-decoration: none;
+  line-height: 32px;
+}
+.btn-submeniu > .fa {
+  position: fixed;
+}
+.meniu-block .meniu-buttons > a.meniu-btn-Login {
+  color: var(--color-primary);
+  position: relative;
+  background-color: transparent;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 4px;
+  font-size: 17px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-primary);
+  vertical-align: -5px;
+  line-height: 32px;
+}
+.meniu-btn-JoinNow {
+  padding: 4px 25px 10px;
+  color: #fff;
+  text-decoration-line: none;
+  background-color: var(--color-secondary);
+  font-size: 16px;
+  transition: all 0.3s;
+  cursor: pointer;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  shape-rendering: auto;
+}
+.btn.meniu-btn-JoinNow:hover {
+  background-color: var(--color-primary);
+}
+.meniu-link-btn:hover {
+  color: var(--color-secondary);
+}
+.meniu-btn-Login:hover {
+  border-bottom: 0 5px;
+  text-underline-position: under;
+}
+.vertical-meniu:animation {
+  animation: 5s;
 }
 
-/*HAMBURGER*/
-.meniu-hamburger {
+.meniu-hamburger .hamburger {
   float: right;
-  padding: 20px 10px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
-@media (max-width: 990px) {
-  .meniu-block .meniu-links .a .meniu-btn {
-    display: none;
-  }
-  .meniu-hamburger {
-    float: right;
-    display: flex-end;
-  }
+.hamburger .fa {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #5c6b56;
 }
 
-.meniu-block .meniu-links .a {
-  padding: 0 30px;
-}
-
-@media (max-width: 2300px) {
-  .meniu-hamburger {
-    display: none;
-  }
-  .meniu-block .meniu-links .a .meniu-btn {
+@media (min-width: 991px) {
+  .meniu-links
+    .a
+    .meniu-link-btn
+    .meniu-link-home
+    .meniu-btn-Login
+    .meniu-btn-JoinNow {
     padding: 0 30px;
+  }
+  .vertical-meniu {
+    display: none;
   }
 }
 /* header end */
@@ -93,9 +179,7 @@
 /* statistics end */
 
 /* counter start */
-.counter {
-  background-color: darksalmon;
-}
+
 /* counter end */
 
 /* what you learn start */
@@ -105,9 +189,7 @@
 /* what you learn end */
 
 /* course syllabus start */
-.syllabus {
-  background-color: yellowgreen;
-}
+
 /* course syllabus end */
 
 /* course benefit start */
@@ -126,6 +208,106 @@
 .reviews {
   background-color: darkred;
 }
+
+.reviews >.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "left right";
+}
+
+.reviews >.row >.first {
+display: inline-block;
+width: 77%;
+padding: 30px;
+grid-area: left;
+justify-self: center;
+margin-left: 20%;
+border-radius: 20px;
+background-color: #fff;
+
+}
+@media only screen and (max-width: 1200px){
+  .reviews >.row >.first {
+width: 400px;
+}
+}
+
+@media only screen and (max-width: 992px){
+  .reviews >.row >.first {
+width: 300px;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .reviews >.row >.first {
+width: 300px;
+}
+}
+
+@media only screen and (max-width: 576px){
+  .reviews >.row >.first {
+width: 300px;
+margin: 0;
+
+}
+.reviews > .grid-container{
+grid-template-columns: 100%;
+grid-template-rows: auto;
+grid-template-areas: "left" ;
+}
+}
+
+
+.reviews >.row >.second {
+display: inline-block;
+width: 77%;
+padding: 30px;
+grid-area: right;
+justify-self: center;
+margin-right: 20%;
+border-radius: 20px;
+background-color: #fff;
+
+}
+@media only screen and (max-width: 1200px){
+  .reviews >.row >.second {
+width: 400px;
+}
+}
+
+@media only screen and (max-width: 992px){
+  .reviews >.row >.second {
+width: 300px;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .reviews >.row >.second {
+width: 300px;
+}
+}
+
+@media only screen and (max-width: 576px){
+  .reviews >.row >.second {
+width: 300px;
+flex-direction: column;
+margin: 0;
+}
+}
+
+
+.checked {
+  color: orange;
+  
+}
+.taylor {
+  width: 80px;
+  height: 80px;
+}
+
+
+
 /* reviews end */
 
 /* enrol form start */
