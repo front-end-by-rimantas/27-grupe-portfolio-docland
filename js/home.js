@@ -1,5 +1,10 @@
 // IMPORT
+import { review } from './components/review/review.js';
+import { reviewCarousel } from './components/reviewCarousel/reviewCarousel.js';
 import { renderTimer } from './components/timer/timer.js';
+import { reviewCarouselData } from './data/reviewCarouselData.js';
+
+
 // header import start
 //import { header } from './components/header/Header.js;
 ////header();
@@ -31,6 +36,7 @@ renderTimer('#content', '06-13 00:00:00')
 // enrol form import end
 
 // EXECUTION
+new reviewCarousel('#review_block', review, reviewCarouselData);
 
 // header execution start
 // header execution end
