@@ -10,6 +10,7 @@
 
 /* components import */
 @import './components/button.css';
+@import './components/benefit.css';
 
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
@@ -111,9 +112,11 @@
 /* course syllabus end */
 
 /* course benefit start */
+
 .benefit {
-  background-color: blueviolet;
+  background-color: whitesmoke;
 }
+
 /* course benefit end */
 
 /* pricing start */

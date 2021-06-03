@@ -1,0 +1,161 @@
+.benefit {
+  background-color: whitesmoke;
+  display: inline-block;
+  width: 100%;
+  padding: var(--container-padding) 10px;
+}
+
+.benefit > .benefit-header {
+  background-color: whitesmoke;
+  padding-top: 10px;
+  padding-bottom: 0;
+  height: 60px;
+}
+
+.benefit > .benefit-header > .navigation {
+  height: 60px;
+  width: 120px;
+  margin-top: 10px;
+}
+
+.benefit > .all-benefits {
+  background-color: whitesmoke;
+  padding-top: 10px;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 250px;
+  display: inline-block;
+  margin: ;
+}
+
+/*.benefit > .all-benefits > .single-benefit {
+  padding: 2px 4px;
+  margin-bottom: 2px;
+  height: 50%;
+  background-color: #fff;
+  height: 120px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+
+*/
+
+@media (min-width: 1399px) {
+  .benefit > .all-benefits > .single-benefit {
+    width: var(--col3);
+    height: 120px;
+    margin-left: var(--half-gap);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+/*
+@media (min-width: 1199px) {
+
+.benefit > .all-benefits > .single-benefit {
+   width: var(--col3);
+    height: 120px;
+    margin-left: var(--half-gap);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 991px) {
+
+    .benefit > .all-benefits > .single-benefit {
+   width: var(--col2);
+    height: 120px;
+    margin-left: var(--half-gap);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  */
+
+/*@media (min-width:0px) {
+
+     .benefit > .all-benefits > .single-benefit {
+    width: var(--col12);
+    height: 120px;
+    margin-left: var(--half-gap);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+  }
+
+  /*
+  @media (min-width: 575px)
+  .benefit > .all-benefits > .single-benefit {
+    width: var(--col6);
+    height: 120px;
+    margin-left: var(--half-gap);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+*/
+
+.benefit > .all-benefits > .single-benefit > .icon-container {
+  height: 110%;
+  width: 25%;
+  float: left;
+  margin-left: -4px;
+  margin-top: -8px;
+  background-color: var(color-carousel-1);
+}
+
+.benefit > .all-benefits > .single-benefit > .icon-container > .red {
+  background-color: red;
+}
+
+.benefit > .all-benefits > .single-benefit > .icon-container > .blue {
+  background-color: var(--color-carousel-2);
+}
+
+.benefit
+  > .all-benefits
+  > .single-benefit
+  > .icon-container
+  > color-carousel-1 {
+  background-color: var(color-carousel-1);
+  background-color: ;
+}
+
+.benefit > .all-benefits > .single-benefit > .icon-container > img {
+  height: 40px;
+  width: 40px;
+  margin-top: 45px;
+  margin-left: 12px;
+}
+
+.benefit > .all-benefits > .single-benefit > .benefit-info {
+  background-color: white;
+  height: 100px;
+  text-align: left;
+}
+
+.benefit > .all-benefits > .single-benefit > .benefit-info > .benefit-heading {
+  text-align: left;
+}
+
+.benefit
+  > .all-benefits
+  > .single-benefit
+  > .benefit-info
+  > .benefit-heading
+  > .benefit-heading-text {
+  margin-top: 20px;
+}
+
+.benefit
+  > .all-benefits
+  > .single-benefit
+  > .benefit-info
+  > .benefit-paragraph {
+  text-align: left;
+  margin-top: 12px;
+}
