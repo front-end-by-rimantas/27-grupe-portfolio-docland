@@ -1,5 +1,5 @@
 // IMPORT
-
+import { renderTimer } from './components/timer/timer.js';
 // header import start
 //import { header } from './components/header/Header.js;
 ////header();
@@ -12,6 +12,7 @@
 // hero import end
 
 // counter import start
+renderTimer('#content', '06-13 00:00:00')
 // counter import end
 
 // what-you-learn import start
