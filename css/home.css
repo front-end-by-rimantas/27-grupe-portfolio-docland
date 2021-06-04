@@ -430,31 +430,42 @@
   margin-bottom: 20px;
 }
 .footer-subscribe-form {
-  justify-content: center;
+  height: 50px;
+  max-width: 400px;
+  position: relative;
 }
 
-.col-fourth > .footer-subscribe-form > .btn {
-  float: right;
+.footer-subscribe-form > .btn {
+  top: 0;
+  right: 0;
+  position: absolute;
   font-size: 18px;
   background-color: #fbc006;
   color: #fff;
-  padding-left: 25px;
   border: transparent;
   border-radius: 50px;
   transition: all 0.3s;
   cursor: pointer;
 }
-.col-fourth > .footer-subscribe-form > #email {
+#email {
+  position: relative;
   font-size: 18px;
-  width: 100%;
+  float: left;
+  max-width: 400px;
   background-color: var(--color-secondary);
   color: #fff;
-  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
   border: transparent;
   border-radius: 50px;
-  width: fit-content;
-  text-rendering: auto;
+  cursor: pointer;
+  padding: 0 20px;
 }
+input::placeholder {
+  color: #fff;
+}
+
 .footer-subscribe-form > .btn:hover {
   color: black;
 }
