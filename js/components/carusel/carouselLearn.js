@@ -9,6 +9,7 @@ class Carousel1 {
 
         this.init()
 
+
     }
 
     init() {
@@ -40,9 +41,14 @@ class Carousel1 {
         const itemsCount = this.data.list.length;
         const itmeWidth = 100 / itemsCount;
         let HTML = '';
+        const imgList = this.data.list
 
         for (let i = 0; i < itemsCount; i++) {
-            HTML += `<div class="item" style="width: ${itmeWidth}%">content</div>`
+            HTML += `<div class="item ${imgList[i].shadow}" style="width: ${itmeWidth}%;
+            background-color: ${imgList[i].color};">
+            <img src="${this.data.imgPath + imgList[i].src}" alt="${imgList[i].alt}">
+            <a href="#" class='title'>${imgList[i].title}</a>
+            </div>`
         }
         return HTML;
     }

@@ -6,38 +6,53 @@ const wahtYouLearnData = {
             itemsNumber: 1
         },
         {
-            minWidth: 600,
+            minWidth: 750,
             itemsNumber: 2
         },
         {
-            minWidth: 900,
+            minWidth: 990,
             itemsNumber: 3
         },
         {
-            minWidth: 1000,
+            minWidth: 1100,
             itemsNumber: 4
         },
     ],
     list: [
         {
             src: 'designThinking.png',
-            alt: 'Img file1'
+            alt: 'Img file1',
+            title: 'Desing thinking',
+            color: '#929DFF',
+            shadow: 'shadow1'
         },
         {
             src: 'prototype.png',
-            alt: 'Img file2'
+            alt: 'Img file2',
+            title: 'Sketch',
+            color: 'rgb(255, 203, 135)',
+            shadow: 'shadow2'
         },
         {
             src: 'sketch1.png',
-            alt: 'Img file3'
+            alt: 'Img file3',
+            title: 'Wireframe',
+            color: 'rgb(133, 182, 255)',
+            shadow: 'shadow3'
         },
         {
             src: 'sketch2.png',
-            alt: 'Img file4'
+            alt: 'Img file4',
+            title: 'Prototype',
+            color: 'rgb(133, 207, 255)',
+            shadow: 'shadow4'
         },
         {
             src: 'wireframe.png',
-            alt: 'Img file5'
+            alt: 'Img file5',
+            title: 'Sketch',
+            color: 'rgb(191, 135, 255)',
+            shadow: 'shadow5'
         }
     ]
 }
