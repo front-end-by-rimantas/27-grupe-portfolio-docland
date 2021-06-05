@@ -22,6 +22,8 @@ class Carousel1 {
         this.itemsInScrean = this.calcTmensPerWiewValue();
         this.render(this.itemsInScrean);
         this.addEvant();
+        // this.arrwMoveToLeft();
+        // this.arrwMoveToRight();
     }
 
     isValidSelector() {
@@ -98,6 +100,74 @@ class Carousel1 {
         })
 
     }
+    //  Options
+
+    // arrwMoveToLeft() {
+    //     let arrwLeft = document.querySelector(".leftArrw")
+    //     let itemsConteiner = document.querySelector('.list')
+    //     let items = document.querySelector('.item')
+    //     const itemsCount = this.data.list.length;
+    //     const itemsWidth = 100 / itemsCount;
+    //     let click = 0;
+    //     let way = 0
+
+
+    //     arrwLeft.addEventListener('click', () => {
+    //         click++
+    //         way += itemsWidth;
+    //         for (let i = 0; i < itemsCount; i++) {
+    //             if (click === 0) { itemsConteiner.style.marginLeft = `0`; }
+    //             if (click === click) { itemsConteiner.style.marginLeft = `${way}% `; }
+    //             if (click === itemsCount) { click = 0 }
+    //         }
+    //     })
+    // };
+
+
+    // arrwMoveToRight() {
+    //     let arrwRight = document.querySelector(".rightArrw")
+    //     let itemsConteiner = document.querySelector('.list')
+    //     let items = document.querySelector('.item')
+    //     const itemOnScreen = this.data.itemsInScrean;
+    //     const itmesCountOnScreen = itemOnScreen.itemsNumber
+    //     const itemsWidth = 100 / itmesCountOnScreen;
+    //     let click = 0;
+    //     let way = 0
+    //     console.log(way);
+
+    //     arrwRight.addEventListener('click', () => {
+    //         click++
+    //         way += itemsWidth;
+    //         console.log(way);
+    //         for (let i = 0; i < itemsCount; i++) {
+    //             if (click === 0) { itemsConteiner.style.marginLeft = `0`; }
+    //             if (click === click) { itemsConteiner.style.marginLeft = `-${werw}% `; }
+    //             console.log('asdfasdf');
+    //         }
+    //     })
+    // };
+
+
 
 }
 export { Carousel1 }
+
+
+// let arrwLeft = document.querySelector(".leftArrw")
+
+
+// function arrwMoveToLeft() {
+//     // arrwLeft.style.marginLeft = "100px"
+//     console.log('left');
+// };
+
+// arrwLeft.addEventListener('click', arrwMoveToLeft)
+
+
+// let arrwRight = document.querySelector(".rightArrw")
+
+// function arrwMoveToRight() {
+//     console.log('It to working!');
+// };
+
+// arrwRight.addEventListener('click', arrwMoveToRight)
