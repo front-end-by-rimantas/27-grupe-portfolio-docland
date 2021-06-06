@@ -5,15 +5,18 @@ class reviewCarousel {
         this.data = data;
 
         this.DOM = null;
+
         this.init();
     }
 
     init() {
-        if (!this.isValidSelector()) {
+        if (!this.isValidSelector() ||
+            !this.findElementBySelector()) {
             return false;
         }
 
         this.render();
+        console.log(this);
 
     }
 
@@ -27,14 +30,16 @@ class reviewCarousel {
 
     findElementBySelector() {
         this.DOM = document.querySelector(this.selector);
-        if (!this.DOM) {
-            return false;
-        }
-        return true;
+        return !!this.DOM;
     }
 
     render() {
-        console.log('Rendering carousel...');
+        const HTML = <div class="reviews container">
+            <div class="row">
+
+            </div>
+
+        </div>
     }
 
 }
