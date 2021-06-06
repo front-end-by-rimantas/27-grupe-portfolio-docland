@@ -388,16 +388,16 @@
 }
 
 .footer-block > .row > .col-first {
-  max-width: 400px;
+  max-width: 350px;
 }
 .footer-block > .row > .col-second {
-  max-width: 400px;
+  max-width: 350px;
 }
 .footer-block > .row > .col-third {
-  max-width: 400px;
+  max-width: 350px;
 }
 .footer-block > .row > .col-fourth {
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .footer-block .meniu-link-btn {
@@ -431,7 +431,7 @@
 }
 .footer-subscribe-form {
   height: 50px;
-  max-width: 400px;
+  max-width: 350px;
   position: relative;
 }
 
@@ -451,7 +451,7 @@
   position: relative;
   font-size: 18px;
   float: left;
-  max-width: 400px;
+  max-width: 350px;
   background-color: var(--color-secondary);
   color: #fff;
   padding-top: 15px;
@@ -475,7 +475,9 @@ input::placeholder {
 /* back-to-top start */
 
 .to-top .fa {
-  position: -webkit-sticky;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
   float: right;
   height: 35px;
   width: 35px;
@@ -483,6 +485,10 @@ input::placeholder {
   color: #5c6b56;
   background: #f8f9fa;
   border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s;
+  padding-left: 12px;
+  padding-top: 8px;
   font-size: 20px;
   color: #fff;
   background: var(--color-primary);
@@ -492,6 +498,10 @@ input::placeholder {
   transition: all 0.3s;
   cursor: pointer;
   box-shadow: 0 1px 2px #0002;
+}
+.to-top.up {
+  visibility: visible;
+  z-index: 9999;
 }
 .to-top .fa:hover {
   box-shadow: 0 2px 6px #0007;
