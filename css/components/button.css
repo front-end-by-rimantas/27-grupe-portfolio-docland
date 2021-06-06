@@ -1,38 +1,8 @@
 .btn {
-    display: inline-block;
-    padding: 16px 30px;
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--color-primary);
-    color: white;
-    border-radius: 6px;
-    box-shadow: 0 1px 2px #0002;
-    cursor: pointer;
-    transition: all 0.3s;
-    margin-top: 28px;
-
-  }
-
-.btn:hover {
-background-color: var(--color-secondary);
-
-  }
-
-.underlineBtn{
-  color: black;
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
   display: inline-block;
-  margin-top: 42px;
-  margin-left: 30px;
-  text-decoration: underline;
-
-}
-
-.playBtnOnImg{
-  color: -var(--color-primary);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 15px 25px;
+  color: var(--color-primary);
 }
