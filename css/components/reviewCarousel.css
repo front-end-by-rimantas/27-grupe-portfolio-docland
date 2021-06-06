@@ -1,0 +1,14 @@
+.reviews carousel {}
+.reviews carousel > .reviews controls {}
+.reviews carousel > .reviews controls > .arrows {}
+.reviews carousel > .arrows > .review-title {}
+.reviews carousel > .reviews galery {}
+.reviews carousel > .reviews galery > .first {}
+.reviews carousel > .reviews galery > .second {}
+.reviews carousel > .reviews galery > .third {}
+.reviews carousel > .reviews stat {}
+.reviews carousel > .reviews stat > .ratings {}
+.reviews carousel > .ratings > .average {}
+.reviews carousel > .ratings > .student {}
+.reviews carousel > .all {}
+.reviews carousel > .all > .all reviews {}
