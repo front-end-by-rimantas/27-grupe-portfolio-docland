@@ -34,8 +34,8 @@ class reviewCarousel {
     }
 
     render() {
-        const HTML = `<div class="reviews carousel">
-            <div class="reviews controls">
+        const HTML = `<div class="reviews-carousel">
+            <div class="reviews-controls">
                 <div class="arrows">
                     <h2 class="reviews-title">Student Reviews</h2>
                 </div>
@@ -44,12 +44,12 @@ class reviewCarousel {
                     <div class="arrow"></div>
                 </div>
             </div>
-            <div id="review_block" class="reviews galery grid-container">
+            <div id="review_block" class="reviews-galery grid-container">
                 <div class="first">Review</div>
                 <div class="second">Review</div>
                 <div class="third">Review</div>
             </div>
-            <div class="reviews stat">
+            <div class="reviews-stat">
                 <div class="ratings">
                     <h2 class="average">4.85/5</h2>
                     <span>Average Ratings</span>
@@ -60,7 +60,7 @@ class reviewCarousel {
                 </div>
             </div>
             <div class="all">
-                <div class="all reviews">
+                <div class="all-reviews">
                     <a href="#">View All Reviews</a>
                 </div>
             </div>

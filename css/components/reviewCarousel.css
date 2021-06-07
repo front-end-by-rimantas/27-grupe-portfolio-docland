@@ -1,14 +1,59 @@
-.reviews carousel {}
-.reviews carousel > .reviews controls {}
-.reviews carousel > .reviews controls > .arrows {}
-.reviews carousel > .arrows > .review-title {}
-.reviews carousel > .reviews galery {}
-.reviews carousel > .reviews galery > .first {}
-.reviews carousel > .reviews galery > .second {}
-.reviews carousel > .reviews galery > .third {}
-.reviews carousel > .reviews stat {}
-.reviews carousel > .reviews stat > .ratings {}
-.reviews carousel > .ratings > .average {}
-.reviews carousel > .ratings > .student {}
-.reviews carousel > .all {}
-.reviews carousel > .all > .all reviews {}
+.reviews-carousel {
+    display: inline-block;
+    width: 100%;
+    background-color: red;
+}
+.reviews-carousel > .reviews-controls {
+    display: inline-block;
+    width: 100%;
+}
+.reviews-carousel > .reviews-controls > .arrows {}
+
+.reviews-carousel > .arrows > .review-title {}
+
+.reviews-carousel > .reviews-galery {
+    display: inline-block;
+    width: 100%;
+}
+.reviews-carousel > .reviews-galery > .first {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: yellow;
+}
+.reviews-carousel > .reviews-galery > .second {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: yellow;
+}
+.reviews-carousel > .reviews-galery > .third {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: yellow;
+}
+.reviews-carousel > .reviews-stat {
+    display: inline-block;
+    width: 100%;
+}
+.reviews-carousel > .reviews-stat > .ratings {
+    display: inline-block;
+    width: 100%;
+}
+.reviews-carousel > .ratings > .average {
+    display: inline-block;
+    width: 100%;
+}
+.reviews-carousel > .ratings > .student {
+    display: inline-block;
+    width: 100%;
+}
+.reviews-carousel > .all {
+    display: inline-block;
+    width: 100%;
+}
+.reviews-carousel > .all > .all-reviews {
+    display: inline-block;
+    width: 100%;
+}
