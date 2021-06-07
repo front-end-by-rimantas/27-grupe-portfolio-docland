@@ -34,6 +34,10 @@ class reviewCarousel {
     }
 
     render() {
+        const reviewsCount = this.data.list.length;
+        const listWidth = reviewsCount / 2 * 100;
+        const reviewWidth = 100 / reviewsCount;
+
         const HTML = `<div class="reviews-carousel">
             <div class="reviews-controls">
                 <div class="arrows">
@@ -44,10 +48,12 @@ class reviewCarousel {
                     <div class="arrow"></div>
                 </div>
             </div>
-            <div id="review_block" class="reviews-galery grid-container">
-                <div class="first">Review</div>
-                <div class="second">Review</div>
-                <div class="third">Review</div>
+            <div class="reviews-frame">
+                <div id="review_block" class="reviews-galery" style="width: ${listWidth}%;">
+                    <div class="first" style="width: ${reviewWidth}%;">Review</div>
+                    <div class="second" style="width: ${reviewWidth}%;">Review</div>
+                    <div class="third" style="width: ${reviewWidth}%;">Review</div>
+                </div>
             </div>
             <div class="reviews-stat">
                 <div class="ratings">

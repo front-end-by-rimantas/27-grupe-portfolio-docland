@@ -11,27 +11,34 @@
 
 .reviews-carousel > .arrows > .review-title {}
 
-.reviews-carousel > .reviews-galery {
+.reviews-carousel > .reviews-frame {
     display: inline-block;
     width: 100%;
+    overflow: hidden;
 }
-.reviews-carousel > .reviews-galery > .first {
+
+.reviews-carousel > .reviews-frame > .reviews-galery {
     display: inline-block;
+    width: 100%;
+        
+}
+.reviews-carousel > .reviews-frame > .reviews-galery > .first {
     width: 100%;
     border: 1px solid #ccc;
     background-color: yellow;
+    float: left;
 }
-.reviews-carousel > .reviews-galery > .second {
-    display: inline-block;
+.reviews-carousel > .reviews-frame > .reviews-galery > .second {
     width: 100%;
     border: 1px solid #ccc;
     background-color: yellow;
+    float: left;
 }
-.reviews-carousel > .reviews-galery > .third {
-    display: inline-block;
+.reviews-carousel > .reviews-frame > .reviews-galery > .third {
     width: 100%;
     border: 1px solid #ccc;
     background-color: yellow;
+    float: left;
 }
 .reviews-carousel > .reviews-stat {
     display: inline-block;
