@@ -1,13 +1,15 @@
-function header(selector, data) {
+function header() {
     const hamburger = document.querySelector('.hamburger')
-    const close = document.querySelector('.verticalMeniuClose')
-    let isSidebarVisible = false;
+    const close = document.querySelector('.closeBtn')
+    let isVerticalMeniuVisible = false;
+    const shadow = document.querySelector('.shadow')
     hamburger.addEventListener('click', () => {
         verticalMeniu(isVisisble)
         isVisible = !isVisible;
-        hamburger.style.display = '';
+        hamburger.style.display = 'none';
         close.style.display = 'block';
     })
+    console.log('headeris veikia');
 
     close.addEventListener('click', () => {
         verticalMeniu(isVisisble)
@@ -19,13 +21,12 @@ function header(selector, data) {
     //logic
 }
 function verticalMeniu(isVisible) {
-    constheaderVerticalMeniu = document.getElementsByClassName('vertical-meniu');
+    const headerVerticalMeniu = document.getElementsById('verticalMeniu');
     if (isVisible) {
-
+        headerVerticalMeniu.style.width = "0";
     }
-
+    else {
+        headerVerticalMeniu.style.width = "350px";
+    }
 }
-
-
-
 export { header }
