@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 
-<body>
+<body class="body-background">
     <!-- Header start -->
     <div class="vertical-meniu">
         <div class=" vertical-meniu-header">
@@ -52,31 +52,33 @@
         </div>
 
     </div>
-    <header class="container" id="header">
-        <div class="row col-12">
-            <div class="header-logo col-lg-2 col-sm-4">
-                <a href="https://themelooks.org/demo/docland/html/index.html"><img src="./img/headerLogo.png" alt="logo DocLand"></a>
-            </div>
-            <div class="row meniu-block hidden visible-lg col-lg-9 ml-lg-1">
-                <div class="meniu-buttons reverse-lg">
-                    <a class="meniu-btn-Login" href="#">Login</a>
-                    <a class="btn meniu-btn-JoinNow" href="#">Join Now</a>
+    <div class="position">
+        <header class="container" id="header">
+            <div class="row col-12">
+                <div class="header-logo col-lg-2 col-sm-4">
+                    <a href="https://themelooks.org/demo/docland/html/index.html"><img src="./img/headerLogo.png" alt="logo DocLand"></a>
                 </div>
-                <nav class="meniu-links reverse-lg">
-                    <a class="meniu-link-home" href="#">Home</a>
-                    <a class="meniu-link-btn" href="#">Pricing</a>
-                    <a class="meniu-link-btn" href="#">Career</a>
-                    <a class="meniu-link-btn" href="#">Pages</a>
-                    <a class="meniu-link-btn" href="#">Blog</a>
-                    <a class="meniu-link-btn" href="#">Contact</a>
-                </nav>
+                <div class="row meniu-block hidden visible-lg col-lg-9 ml-lg-1">
+                    <div class="meniu-buttons reverse-lg">
+                        <a class="meniu-btn-Login" href="#">Login</a>
+                        <a class="btn meniu-btn-JoinNow" href="#">Join Now</a>
+                    </div>
+                    <nav class="meniu-links reverse-lg">
+                        <a class="meniu-link-home" href="#">Home</a>
+                        <a class="meniu-link-btn" href="#">Pricing</a>
+                        <a class="meniu-link-btn" href="#">Career</a>
+                        <a class="meniu-link-btn" href="#">Pages</a>
+                        <a class="meniu-link-btn" href="#">Blog</a>
+                        <a class="meniu-link-btn" href="#">Contact</a>
+                    </nav>
+                </div>
+                <div class="row meniu-hamburger visible hidden-lg col-sm-2 col-md-2" style="float:right;">
+                    <button class="hamburger reverse-sm"><i class="fa fa-bars"></i>
+                    </button>
+                </div>
             </div>
-            <div class="row meniu-hamburger visible hidden-lg col-sm-2 col-md-2" style="float:right;">
-                <button class="hamburger reverse-sm"><i class="fa fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+        </header>
+    </div>
     <!-- Header end -->
 
     <!-- Hero start -->
@@ -460,12 +462,12 @@
 
     <!-- Footer start -->
     <div class="footer container">
-        <div class="footer block">
+        <div class="footer-block">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4" style="background-color: blanchedalmond;">
-                    <img class="logo" src="#" alt="Logo DOCLand black">
-                    <p>Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est. Sed ut euismod quam. Suspendisse potenti. Aliquam fringilla orci tincidunt sit amet est.</p>
-                    <div class="socials" style="padding-inline: 20px;">
+                <div class="col-first col-12 col-md-6 col-lg-4">
+                    <img class="logo" src="./img/footerLogo.png" alt="Logo DOCLand black">
+                    <p class="footer-paragraph">Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est. Sed ut euismod quam. Suspendisse potenti. Aliquam fringilla orci tincidunt sit amet est.</p>
+                    <div class="socials">
                         <a href="#"><i class="fa fa-facebook" target="_blank"></i></a>
                         <a href="#"><i class="fa fa-twitter" target="_blank"></i></a>
                         <a href="#"><i class="fa fa-instagram" target="_blank"></i></a>
@@ -473,28 +475,31 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-2" style="background-color: yellowgreen;">
-                    <h3>Features</h3>
-                    <li><a href="#">Timeline Review</a></li>
-                    <li><a href="#">Custom Fields</a></li>
-                    <li><a href="#">Custom Templates</a></li>
-                    <li><a href="#">Task Dependencies</a></li>
+                <div class="col-second col-12 col-md-6 col-lg-2 col-xl-2 col-xl-2">
+                    <h2 class="footer-header">Features</h2>
+                    <li><a class="meniu-link-btn" href="#">Timeline Review</a></li>
+                    <li><a class="meniu-link-btn" href="#">Custom Fields</a></li>
+                    <li><a class="meniu-link-btn" href="#">Custom Templates</a></li>
+                    <li><a class="meniu-link-btn" href="#">Task Dependencies</a></li>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-2 " style="background-color: red">
-                    <h3>Company</h3>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Pricing Plan</a></li>
-                    <li><a href="#">Privacy & Policy</a></li>
-                    <li><a href="#">Latest News</a></li>
+                <div class=" col-third col-12 col-md-6 col-lg-2 col-xl-2 ">
+                    <h2 class="footer-header">Company</h2>
+                    <li><a class="meniu-link-btn" href="#">About Us</a></li>
+                    <li><a class="meniu-link-btn" href="#">Pricing Plan</a></li>
+                    <li><a class="meniu-link-btn" href="#">Privacy & Policy</a></li>
+                    <li><a class="meniu-link-btn" href="#">Latest News</a></li>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 " style="background-color: aqua;">
-                    <h3>Subscribe Newsletter</h3>
-                    <p>Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.</p>
-                    <div class="subscribe form" style="float: left; padding: 5%;">
-                        <form action="Enter your email"><input type="email"><button>Subscribe</button></form>
-                    </div>
+                <div class="col-fourth col-12 col-md-6 col-lg-4 col-xl-4 ">
+                    <h2 class="footer-header">Subscribe Newsletter</h2>
+                    <p class="footer-paragraph">Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.</p>
+                    <form>
+                        <div class="row footer-subscribe-form">
+                            <input class="input" id="email" type="email" placeholder=" Enter your email" required;">
+                            <button type="submit" class="btn stack-top">Subscribe</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -503,8 +508,8 @@
     <!-- Footer end -->
 
     <!-- Back to top (button) start -->
-    <div class="to-top">
-        <button class="fa fa-angle-up"></button>
+    <div class="to-top up">
+        <a class="fa fa-angle-up" href="#"></a>
     </div>
     <!-- Back to top (button) end -->
 
