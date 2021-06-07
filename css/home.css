@@ -22,7 +22,6 @@
 
 .vertical-meniu {
   display: inline-block;
-
   position: fixed;
   background-color: #fff;
   padding: 25px;
@@ -31,6 +30,7 @@
   width: 350px;
   height: fit-content;
   z-index: 99999;
+  animation: vertical-meniu 2s 1 reverse;
 }
 .vertical-meniu-header {
   justify-content: space-between;
