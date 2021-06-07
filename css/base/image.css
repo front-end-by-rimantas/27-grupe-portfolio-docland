@@ -1,23 +1,43 @@
 .behindImgTop{
     display: inline-block;
     z-index: -1;
-    visibility: visible;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
     position:relative;
     left: -60px;
     top: -580px;
-
+    visibility: visible;
 }
 
 .behindImgBottom{
     display: inline-block;
     z-index: -1;
-    animation-duration: 0;
-    animation-delay: 0;
     position:relative;
-    left: 352px;
-    top: -430px;
+    left: 340px;
+    top: -420px;
     transform: rotate(90deg);
 }
 
+@media (max-width:1199px) {
+  .behindImgBottom{
+          display: inline-block;
+              left: 210px;
+  }
+  }
+
+  @media (max-width:1199px) {
+  .behindImgTop{
+          display: inline-block;
+            left: -30px;
+            top: -440px;
+  }
+  }
+  @media (max-width:988px) {
+  .behindImgBottom{
+          display: none;
+  }
+  }
+
+@media (max-width:988px) {
+  .behindImgTop{
+          display: none;
+  }
+  }

@@ -6,3 +6,36 @@
   padding: 15px 25px;
   color: var(--color-primary);
 }
+
+
+.btnMain{
+    display: inline-block;
+    padding: 15px 28px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 28px;
+  }
+
+.btnMain:hover {
+background-color: var(--color-secondary);
+transition: 0.5s;
+
+  }
+
+.underlineBtn{
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  margin-top: 42px;
+  margin-left: 30px;
+  text-decoration: underline;
+}
