@@ -21,7 +21,7 @@ renderTimer('#content', '06-13 00:00:00')
 
 // syllabus import start
 import { syllabusData } from './data/syllabusData.js';
-import { renderAccordion } from './components/accordion/accordion.js'
+import { renderAccordion } from './components/accordion/accordion.js';
 // syllabus import end
 
 // benefit import start
