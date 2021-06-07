@@ -5,6 +5,7 @@ class Carousel1 {
         this.data = data;
 
         this.DOM = null;
+        this.listDOM = null;
         this.itemsInScrean = 1
 
         this.init()
@@ -38,38 +39,63 @@ class Carousel1 {
         return !!this.DOM;
     }
 
-    generateItems() {
-        const itemsCount = this.data.list.length;
+    generateItems(data) {
+        const itemsCount = data.length;
         const itmeWidth = 100 / itemsCount;
         let HTML = '';
-        const imgList = this.data.list
+        // const imgList = this.data.list
 
         for (let i = 0; i < itemsCount; i++) {
-            HTML += `<div class="item ${imgList[i].shadow}" style="width: ${itmeWidth}%;
-            background-color: ${imgList[i].color};">
-            <img src="${this.data.imgPath + imgList[i].src}" alt="${imgList[i].alt}">
-            <a href="#" class='title'>${imgList[i].title}</a>
+            HTML += `<div class="item" style="width: ${itmeWidth}%;">
+            <img src="#" alt="#">
+            <a href="#" class='title'></a>
             </div>`
         }
+
+        // for (let i = 0; i < itemsCount; i++) {
+        //     HTML += `<div class="item ${imgList[i].shadow}" style="width: ${itmeWidth}%;
+        //     background-color: ${imgList[i].color};">
+        //     <img src="${this.data.imgPath + imgList[i].src}" alt="${imgList[i].alt}">
+        //     <a href="#" class='title'>${imgList[i].title}</a>
+        //     </div>`
+        // }
         return HTML;
     }
 
     render(itemsOnScreen) {
-        const itemsCount = this.data.list.length;
+
+        const clonedData = [
+            ...this.data.list.slice(-itemsOnScreen),
+            ...this.data.list,
+            ...this.data.list.slice(0, itemsOnScreen)
+        ];
+
+
+        const itemsCount = clonedData.length;
         const listWidth = itemsCount / itemsOnScreen * 100;
+        const translate = itemsOnScreen / clonedData.length * 100;
+        console.log(itemsCount);
 
 
 
-        const HTML = `<div class='corouselLearn'>
+        const HTML = `  <div class="col-12 col-md-12 col-lg-10">
+                            <h2>What You'll Learn From This Course</h2>
+                        </div>
+                        <div class="hidden visible-lg col-lg-2 reverse-lg">
+                            <button class="leftArrw fa fa-angle-left"></button>
+                            <button class="rightArrw fa fa-angle-right"></button>
+                        </div>
+                        <div class='corouselLearn'>
                         <div class="gallery">
-                            <div class="list" style="width: ${listWidth}%;">
-                               ${this.generateItems()}
+                            <div class="list" style="width: ${listWidth}%; transform: translateX(-${translate}%);">
+                               ${this.generateItems(clonedData)}
                             </div>
                             
                         </div>
                     </div>`
 
         this.DOM.innerHTML = HTML;
+        this.listDOM = this.DOM.querySelector('.list');
 
     }
 

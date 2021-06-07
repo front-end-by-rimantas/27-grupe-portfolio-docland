@@ -54,41 +54,7 @@ const wahtYouLearnData = {
             color: 'rgb(191, 135, 255)',
             shadow: 'shadow5'
         },
-        {
-            src: 'wireframe.png',
-            alt: 'Img file5',
-            title: 'Sketch',
-            color: 'rgb(191, 135, 255)',
-            shadow: 'shadow5'
-        },
-        {
-            src: 'wireframe.png',
-            alt: 'Img file5',
-            title: 'Sketch',
-            color: 'rgb(191, 135, 255)',
-            shadow: 'shadow5'
-        },
-        {
-            src: 'wireframe.png',
-            alt: 'Img file5',
-            title: 'Sketch',
-            color: 'rgb(191, 135, 255)',
-            shadow: 'shadow5'
-        },
-        {
-            src: 'wireframe.png',
-            alt: 'Img file5',
-            title: 'Sketch',
-            color: 'rgb(191, 135, 255)',
-            shadow: 'shadow5'
-        },
-        {
-            src: 'wireframe.png',
-            alt: 'Img file5',
-            title: 'Sketch',
-            color: 'rgb(191, 135, 255)',
-            shadow: 'shadow5'
-        }
+
     ]
 }
 
