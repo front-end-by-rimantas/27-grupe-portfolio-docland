@@ -160,3 +160,4 @@ const syllabusData = {
         },
     ]
 }
+export { syllabusData }

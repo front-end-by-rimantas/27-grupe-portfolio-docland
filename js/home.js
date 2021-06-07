@@ -1,4 +1,5 @@
 // IMPORT
+import { format } from 'prettier';
 import { renderTimer } from './components/timer/timer.js';
 // header import start
 //import { header } from './components/header/Header.js;
@@ -19,6 +20,8 @@ renderTimer('#content', '06-13 00:00:00')
 // what-you-learn import end
 
 // syllabus import start
+import { syllabusData } from './data/syllabusData.js';
+import { renderAccordion } from './components/accordion/accordion.js'
 // syllabus import end
 
 // benefit import start
