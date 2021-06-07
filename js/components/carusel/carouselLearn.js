@@ -130,23 +130,26 @@ class Carousel1 {
             }
         })
 
-        let translate = this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100;
-        let click = 0;
+        let translate = 0;
+        let clickright = 0;
+        let clickleft = 0;
         this.rightArrow.addEventListener('click', () => {
-            click++
-            this.visibleItemIndex = this.itemsInScrean + click;
-            translate = this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100 - floor(this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100);
-
+            clickright++
+            clickleft--
+            this.visibleItemIndex = this.itemsInScrean + clickright;
+            translate = this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100
+            console.log(clickright);
             this.listDOM.style.transform = `translateX(-${translate}%)`;
 
         })
 
 
         this.leftArrow.addEventListener('click', () => {
-            click--
-            this.visibleItemIndex = this.itemsInScrean + click;
-            translate = this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100 - floor(this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100);
-
+            clickleft++
+            clickrigh--
+            this.visibleItemIndex = this.itemsInScrean + clickleft;
+            translate += this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100
+            console.log(clickleft);
             this.listDOM.style.transform = `translateX(${translate}%)`;
 
         })
