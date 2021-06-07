@@ -6,7 +6,10 @@ class Carousel1 {
 
         this.DOM = null;
         this.listDOM = null;
-        this.itemsInScrean = 1
+        this.leftArrow = null;
+        this.rightArrow = null;
+        this.itemsInScrean = 1;
+        this.visibleItemIndex = 0;
 
         this.init()
 
@@ -21,6 +24,7 @@ class Carousel1 {
 
         this.data.itemsInScrean = this.data.itemsInScrean.sort((a, b) => a.minWidth - b.minWidth);
         this.itemsInScrean = this.calcTmensPerWiewValue();
+        this.visibleItemIndex = this.itemsInScrean;
         this.render(this.itemsInScrean);
         this.addEvant();
 
@@ -74,7 +78,6 @@ class Carousel1 {
         const itemsCount = clonedData.length;
         const listWidth = itemsCount / itemsOnScreen * 100;
         const translate = itemsOnScreen / clonedData.length * 100;
-        console.log(itemsCount);
 
 
 
@@ -96,6 +99,9 @@ class Carousel1 {
 
         this.DOM.innerHTML = HTML;
         this.listDOM = this.DOM.querySelector('.list');
+        this.leftArrow = this.DOM.querySelector('.leftArrw')
+        this.rightArrow = this.DOM.querySelector('.rightArrw')
+
 
     }
 
@@ -122,6 +128,27 @@ class Carousel1 {
                 this.render(itemsToRender)
                 this.itemsInScrean = itemsToRender;
             }
+        })
+
+        let translate = this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100;
+        let click = 0;
+        this.rightArrow.addEventListener('click', () => {
+            click++
+            this.visibleItemIndex = this.itemsInScrean + click;
+            translate = this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100 - floor(this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100);
+
+            this.listDOM.style.transform = `translateX(-${translate}%)`;
+
+        })
+
+
+        this.leftArrow.addEventListener('click', () => {
+            click--
+            this.visibleItemIndex = this.itemsInScrean + click;
+            translate = this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100 - floor(this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100);
+
+            this.listDOM.style.transform = `translateX(${translate}%)`;
+
         })
 
     }
