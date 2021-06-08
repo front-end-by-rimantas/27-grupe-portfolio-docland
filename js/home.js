@@ -1,5 +1,4 @@
 // IMPORT
-import { format } from 'prettier';
 import { renderTimer } from './components/timer/timer.js';
 // header import start
 //import { header } from './components/header/Header.js';
