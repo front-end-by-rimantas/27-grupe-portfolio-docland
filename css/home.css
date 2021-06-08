@@ -312,8 +312,58 @@
 
 /* enrol form start */
 .enrol-form {
-  background-color: darkseagreen;
 }
+.enrol-form > .row {
+  background-color: var(--color-secondary);
+  border-radius: 25px;
+  box-shadow: 0 2px 8px #0002;
+}
+.enrol-form > .row > .row > h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+.enrol-form > .row > .row > .progress-line {
+  box-sizing: border-box;
+  height: 1px;
+  background-color: #fff;
+  animation-delay: 0.1s;
+}
+.enrol-form > .row > .row > form > .input {
+  background: transparent;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 18px;
+  float: left;
+  max-width: 530px;
+  width: 100%;
+  border: transparent;
+  cursor: pointer;
+  padding: 0 20px;
+}
+.enrol-form > .row > .row > .btn-arrow > a {
+  position: sticky;
+  border: none;
+  background: transparent;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  font-size: 17px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btn-arrow .fa {
+  color: #5c6b56;
+  font-size: large;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 20px;
+  background-color: red;
+}
+
 /* enrol form end */
 
 /* course instructor start */
