@@ -47,13 +47,18 @@ class Carousel1 {
         const itemsCount = data.length;
         const itmeWidth = 100 / itemsCount;
         let HTML = '';
-        // const imgList = this.data.list
 
         for (let i = 0; i < itemsCount; i++) {
-            HTML += `<div class="item" style="width: ${itmeWidth}%;">
-            <img src="#" alt="#">
-            <a href="#" class='title'></a>
+            const obj = new this.component({
+                ...data[i],
+                imgPath: this.data.imgPath
+            });
+
+            console.log(obj);
+            HTML += `<div class="item ${obj.data.shadow}" style="width: ${itmeWidth}%; background-color: ${obj.data.color}">
+            ${obj.learnHTML()}
             </div>`
+            console.log(obj.data.shadow);
         }
 
         // for (let i = 0; i < itemsCount; i++) {
@@ -130,29 +135,7 @@ class Carousel1 {
             }
         })
 
-        let translate = 0;
-        let clickright = 0;
-        let clickleft = 0;
-        this.rightArrow.addEventListener('click', () => {
-            clickright++
-            clickleft--
-            this.visibleItemIndex = this.itemsInScrean + clickright;
-            translate = this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100
-            console.log(clickright);
-            this.listDOM.style.transform = `translateX(-${translate}%)`;
 
-        })
-
-
-        this.leftArrow.addEventListener('click', () => {
-            clickleft++
-            clickrigh--
-            this.visibleItemIndex = this.itemsInScrean + clickleft;
-            translate += this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100
-            console.log(clickleft);
-            this.listDOM.style.transform = `translateX(${translate}%)`;
-
-        })
 
     }
     //  Options
