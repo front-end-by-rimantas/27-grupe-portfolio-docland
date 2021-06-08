@@ -1,5 +1,6 @@
 // IMPORT
 import { renderTimer } from './components/timer/timer.js';
+
 // header import start
 //import { header } from './components/header/Header.js';
 ////header();
@@ -28,6 +29,8 @@ renderTimer('#content', '06-13 00:00:00')
 // reviews import end
 
 // enrol form import start
+import { progressLine } from './components/enrol-form/enrolForm.js';
+progressLine();
 // enrol form import end
 
 // EXECUTION
