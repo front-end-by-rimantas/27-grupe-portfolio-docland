@@ -16,7 +16,7 @@ class reviewCarousel {
         }
 
         this.render();
-        console.log(this);
+        this.addEvents();
 
     }
 
@@ -35,8 +35,10 @@ class reviewCarousel {
 
     render() {
         const reviewsCount = this.data.list.length;
-        const listWidth = reviewsCount / 2 * 100;
+        const reviewPerView = 2;
+        const listWidth = reviewsCount / reviewPerView * 100;
         const reviewWidth = 100 / reviewsCount;
+        const singleMargin = 100 / reviewPerView;
 
         const HTML = `<div class="reviews-carousel">
             <div class="reviews-controls">
@@ -74,6 +76,17 @@ class reviewCarousel {
 
         this.DOM.innerHTML = HTML;
 
+    }
+
+    addEvents() {
+        this.data.reviewPerView = this.data.reviewPerView.sort((a, b) => a.minWidth - b.minWidth);
+
+        const responsive = this.data.reviewPerView;
+        console.log(responsive);
+
+        window.addEventListener('resize', () => {
+            console.log('resizing...');
+        })
     }
 
 }

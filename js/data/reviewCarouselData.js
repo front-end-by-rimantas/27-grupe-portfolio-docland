@@ -1,13 +1,13 @@
 const reviewCarouselData = {
     imgPath: './img/review/',
-    itrmsPerView: [
+    reviewPerView: [
         {
             minWidth: 0,
-            itemCount: 1
+            reviewCount: 1
         },
         {
             minWidth: 500,
-            itemCount: 2
+            reviewCount: 2
         },
 
     ],
