@@ -25,6 +25,7 @@
     border-radius: 15px;
     padding-right: 13px;
     transition: 1s;
+    z-index: -1;
 }
 
 .corouselLearn .item > img {
