@@ -6,6 +6,7 @@
     display: inline-block;
     width: 100%;
     overflow: hidden;
+    
 }
 
 .corouselLearn > .gallery .list {
@@ -13,8 +14,7 @@
     gap: 25px;
     width: 100%;
     padding: 30px;
-    transition: 2s;
-    
+    transition: 1s;
 }
 
 .corouselLearn .list > .item {
@@ -24,7 +24,7 @@
     text-align: center;
     border-radius: 15px;
     padding-right: 13px;
-    transition: 2s;
+    transition: 1s;
 }
 
 .corouselLearn .item > img {

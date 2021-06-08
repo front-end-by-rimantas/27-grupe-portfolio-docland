@@ -54,35 +54,28 @@ class Carousel1 {
                 imgPath: this.data.imgPath
             });
 
-            console.log(obj);
+
             HTML += `<div class="item ${obj.data.shadow}" style="width: ${itmeWidth}%; background-color: ${obj.data.color}">
             ${obj.learnHTML()}
             </div>`
-            console.log(obj.data.shadow);
+
         }
 
-        // for (let i = 0; i < itemsCount; i++) {
-        //     HTML += `<div class="item ${imgList[i].shadow}" style="width: ${itmeWidth}%;
-        //     background-color: ${imgList[i].color};">
-        //     <img src="${this.data.imgPath + imgList[i].src}" alt="${imgList[i].alt}">
-        //     <a href="#" class='title'>${imgList[i].title}</a>
-        //     </div>`
-        // }
         return HTML;
     }
 
-    render(itemsOnScreen) {
+    render(itemsInScrean) {
 
         const clonedData = [
-            ...this.data.list.slice(-itemsOnScreen),
+            ...this.data.list.slice(-itemsInScrean),
             ...this.data.list,
-            ...this.data.list.slice(0, itemsOnScreen)
+            ...this.data.list.slice(0, itemsInScrean)
         ];
 
 
         const itemsCount = clonedData.length;
-        const listWidth = itemsCount / itemsOnScreen * 100;
-        const translate = itemsOnScreen / clonedData.length * 100;
+        const listWidth = itemsCount / itemsInScrean * 100;
+        const translate = itemsInScrean / clonedData.length * 100;
 
 
 
@@ -124,6 +117,11 @@ class Carousel1 {
         return itemsToRender;
     }
 
+    carouselAnimarion() {
+        const transalte = this.visibleItemIndex / (this.data.list.length + 2 * this.itemsInScrean) * 100;
+        this.listDOM.style.transform = `translateX(-${transalte}%)`;
+    }
+
     addEvant() {
 
         window.addEventListener('resize', () => {
@@ -135,6 +133,15 @@ class Carousel1 {
             }
         })
 
+        this.rightArrow.addEventListener('click', () => {
+            this.visibleItemIndex++;
+            this.carouselAnimarion();
+        });
+
+        this.leftArrow.addEventListener('click', () => {
+            this.visibleItemIndex--;
+            this.carouselAnimarion();
+        });
 
 
     }
