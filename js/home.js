@@ -4,7 +4,7 @@ import { Interface } from './components/carusel/interfase.js';
 import { renderTimer } from './components/timer/timer.js';
 import { wahtYouLearnData } from './data/wahtYouLearnData.js';
 // header import start
-//import { header } from './components/header/Header.js;
+//import { header } from './components/header/Header.js';
 ////header();
 //addEventListener('click', () => {
 
