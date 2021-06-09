@@ -3,12 +3,13 @@ import { Carousel1 } from './components/carusel/carouselLearn.js';
 import { Interface } from './components/carusel/interfase.js';
 import { renderTimer } from './components/timer/timer.js';
 import { wahtYouLearnData } from './data/wahtYouLearnData.js';
-// header import start
-//import { header } from './components/header/Header.js';
-////header();
-//addEventListener('click', () => {
 
-//})
+// header import start
+import { header } from './components/header/Header.js';
+header();
+addEventListener('click', () => {
+})
+
 // header import end
 
 // hero import start
@@ -32,6 +33,8 @@ new Carousel1('#corouselLearn', Interface, wahtYouLearnData)
 // reviews import end
 
 // enrol form import start
+import { progressLine } from './components/enrol-form/enrolForm.js';
+progressLine();
 // enrol form import end
 
 // EXECUTION

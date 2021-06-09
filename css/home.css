@@ -4,7 +4,9 @@
 @import './base/variables.css';
 @import './base/common.css';
 @import './base/paragraph.css';
+@import './base/image.css';
 @import './base/syllabus.css';
+@import './base/header.css';
 
 /* 3rd-party import */
 @import './3rd-party/font-awesome.min.css';
@@ -16,163 +18,7 @@
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
-.position {
-  position: fixed;
-  z-index: 99998;
-}
 
-.vertical-meniu {
-  display: inline-block;
-
-  position: fixed;
-  background-color: #fff;
-  padding: 25px;
-  right: 0;
-  top: 0;
-  width: 350px;
-  height: fit-content;
-  z-index: 99999;
-}
-.vertical-meniu-header {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.close-btn {
-  float: right;
-  border: none;
-  background-color: transparent;
-  height: 23px;
-  width: 30px;
-  margin-top: 0;
-  margin-left: 0;
-  font-size: 23px;
-  color: #5c6b56;
-}
-.meniu-block-vertical {
-  justify-content: left;
-  padding-top: 35px;
-  padding-right: 20px;
-  margin: 0;
-}
-
-.meniu-buttons-column {
-  list-style: none;
-}
-.btn-submeniu {
-  float: right;
-  color: #5c6b56;
-  margin-top: 12px;
-  font-size: 12px;
-}
-#header {
-  background-color: #f8f9fa;
-  position: sticky;
-  position: fixed;
-  top: 0;
-  margin-top: 0;
-  vertical-align: middle;
-  padding: 0;
-}
-
-.row .meniu-block {
-  float: right;
-}
-.row .header-logo {
-  position: absolute;
-}
-.meniu-block {
-  align-items: center;
-}
-.meniu-links .meniu-link-home {
-  padding: 15px 5px 15px;
-  color: var(--color-secondary);
-  font: Hind, sans-serif;
-  text-decoration: none;
-  line-height: 32px;
-}
-.meniu-submeniu .meniu-link-home {
-  padding: 15px 5px 15px;
-  color: var(--color-secondary);
-  font: Hind, sans-serif;
-  text-decoration: none;
-  line-height: 32px;
-}
-
-.meniu-link-btn {
-  padding: 15px 5px 15px;
-  color: #5c6b56;
-  text-decoration: none;
-  line-height: 32px;
-}
-.btn-submeniu > .fa {
-  position: fixed;
-}
-.meniu-block .meniu-buttons > a.meniu-btn-Login {
-  color: var(--color-primary);
-  position: relative;
-  background-color: transparent;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-bottom: 4px;
-  font-size: 17px;
-  text-decoration: none;
-  border-bottom: 1px solid var(--color-primary);
-  vertical-align: -5px;
-  line-height: 32px;
-}
-
-.meniu-btn-JoinNow {
-  padding: 4px 25px 10px;
-  color: #fff;
-  text-decoration-line: none;
-  background-color: var(--color-secondary);
-  font-size: 16px;
-  transition: all 0.3s;
-  cursor: pointer;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-  shape-rendering: auto;
-}
-.btn.meniu-btn-JoinNow:hover {
-  background-color: var(--color-primary);
-}
-.meniu-link-btn:hover {
-  color: var(--color-secondary);
-}
-.meniu-btn-Login:hover {
-  border-bottom: 0 5px;
-  text-underline-position: under;
-}
-.vertical-meniu:animation {
-  animation: 5s;
-}
-
-.meniu-hamburger .hamburger {
-  float: right;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
-.hamburger .fa {
-  font-size: 20px;
-  font-weight: lighter;
-  color: #5c6b56;
-}
-
-@media (min-width: 991px) {
-  .meniu-links
-    .a
-    .meniu-link-btn
-    .meniu-link-home
-    .meniu-btn-Login
-    .meniu-btn-JoinNow {
-    padding: 0 30px;
-  }
-  .vertical-meniu {
-    display: none;
-  }
-}
 /* header end */
 
 /* hero start */
@@ -331,8 +177,103 @@
 /* reviews end */
 
 /* enrol form start */
-.enrol-form {
-  background-color: darkseagreen;
+
+.enrol-form > .row {
+  background-color: var(--color-secondary);
+  border-radius: 25px;
+  box-shadow: 0 2px 8px #0002;
+}
+@media only screen and (max-width: 1200px) {
+  .enrol-form > .row {
+    box-sizing: border-box;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .enrol-form > .row {
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+.enrol-form > .row > .row > h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.enrol-form > .row > .row > #progressLine {
+  box-sizing: border-box;
+  height: 2px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.animation {
+  transition: 1s linear;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.enrol-form > .row > .row > .progress-line:hover {
+  background-color: var(--color-primary);
+}
+.enrol-form > .row > .row > form > .input {
+  background: transparent;
+  box-sizing: border-box;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  top: 0;
+  left: 0;
+  position: relative;
+  font-size: 18px;
+  float: left;
+  width: 100%;
+  border: transparent;
+  cursor: pointer;
+}
+.enrol-form > .row > .row > form > #enrolInput {
+  background: transparent;
+  box-sizing: border-box;
+  height: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  top: 0;
+  left: 0;
+  position: relative;
+  font-size: 18px;
+  float: left;
+  width: 100%;
+  border: transparent;
+  cursor: pointer;
+}
+.btn-arrow {
+  background: transparent;
+  border: none;
+  font-size: large;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.btn-arrow .fa {
+  color: #fff;
+  font-size: large;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.btn-arrow .fa:hover {
+  color: var(--color-primary);
 }
 /* enrol form end */
 
@@ -497,7 +438,7 @@ input::placeholder {
 .to-top .fa {
   position: fixed;
   bottom: 10px;
-  right: 20px;
+  right: 10px;
   float: right;
   height: 35px;
   width: 35px;
