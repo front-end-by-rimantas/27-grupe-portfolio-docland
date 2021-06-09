@@ -1,7 +1,6 @@
 function header() {
     const hamburger = document.querySelector('.hamburger')
     const close = document.querySelector('.close-btn')
-    console.log('close');
     let isVerticalMeniuVisible = false;
     const shadow = document.querySelector('.shadow');
     hamburger.addEventListener('click', () => {
