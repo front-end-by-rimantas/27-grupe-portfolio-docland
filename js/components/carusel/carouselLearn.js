@@ -30,6 +30,7 @@ class Carousel1 {
         this.render(this.itemsInScrean);
         this.addEvant();
 
+
     }
 
     isValidSelector() {
@@ -148,7 +149,7 @@ class Carousel1 {
                     }, this.animationDuration);
                     setTimeout(() => {
                         this.listDOM.style.transition = `all ${this.animationDuration}ms`;
-                    }, this.animationDuration + 100);
+                    }, this.animationDuration + 20);
                 }
                 setTimeout(() => {
                     this.animationInProgress = false;
@@ -171,7 +172,7 @@ class Carousel1 {
                     }, this.animationDuration);
                     setTimeout(() => {
                         this.listDOM.style.transition = `all ${this.animationDuration}ms`;
-                    }, this.animationDuration + 100);
+                    }, this.animationDuration + 20);
                 }
                 setTimeout(() => {
                     this.animationInProgress = false;
