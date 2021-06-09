@@ -4,6 +4,7 @@
 @import './base/variables.css';
 @import './base/common.css';
 @import './base/paragraph.css';
+@import './base/image.css';
 @import './base/syllabus.css';
 
 /* 3rd-party import */
