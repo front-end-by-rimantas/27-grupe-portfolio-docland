@@ -12,10 +12,10 @@
 
 <body class="body-background">
     <!-- Header start -->
-    <div class="vertical-meniu">
-        <div class=" vertical-meniu-header">
+    <div id="verticalMeniu" class="vertical-meniu">
+        <div class="vertical-meniu-header">
             <a href="https://themelooks.org/demo/docland/html/index.html"><img src="./img/headerLogo.png" alt="logo DocLand"></a>
-            <button class="close-btn">
+            <button id="closeBtn" class="close-btn">
                 <i class="fa fa-times"></i>
             </button>
         </div>
@@ -50,8 +50,8 @@
                 </li>
             </ul>
         </div>
-
     </div>
+    <div class="shadow"></div>
     <div class="position">
         <header class="container" id="header">
             <div class="row col-12">
@@ -102,20 +102,25 @@
     <!-- Student reviews end -->
 
     <!-- Hero start -->
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-5 col-lg-6">
-                <img src="#" alt="Logo 5 stars">
-                <span>(2.3k)</span>
-                <h1>Learn UX Design</h1>
-                <p><span>With</span><span>Don Norman</span></p>
-                <p>Design High-Impact User...</p>
-                <a href="#">Enroll Now</a>
-                <a href="#">Financial Aid available</a>
+    <div class="container  body-background" style="margin-top:70px;">
+        <div class="row ">
+            <div class="col-12 col-md-5 col-lg-6" style="margin-top: 160px;">
+                <i class="fa fa-star" aria-hidden="true" style="color: var(--color-primary);"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: var(--color-primary);"></i>
+                <i class=" fa fa-star" aria-hidden="true" style="color: var(--color-primary)"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: var(--color-primary);"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true" style="color: var(--color-primary);"></i>
+                <span class="smParagraph">(2.3k)</span>
+                <h1 style=" font-size: 54px; font-family: sans-serif; line-height: 1.4;">Learn UX Design</h1>
+                <p class="smParagraph"><span>With </span><span style="color: var(--color-secondary);"><b>Don Norman</b></span></p>
+                <p class="smParagraph" style="line-height: 1.6; font-weight: 100; margin-top: 10px;">Design High-Impact User Experiences. Research, Design, and Prototype effective, visually-driven websites and apps.</p>
+                <a href="#" class="btnMain">Enroll Now</a>
+                <a href="#" class="underlineBtn">Financial Aid Available</a>
             </div>
             <div class="col-12 col-md-7 col-lg-6">
-                <img src="#" alt="logo">
-                <a href="#">Play button</a>
+                <img src="./img/hero-img/hero.png" alt="img" style="height: auto; max-width: 100%; display: inline-block; margin-top: 40px;" class="damnHeroIndex">
+                <img src="./img/hero-img/backgroundTop.png" alt="img" class="behindImgTop">
+                <img src="./img/hero-img/backgroundBottom.png" alt=" img" class="behindImgBottom">
             </div>
         </div>
     </div>
@@ -436,11 +441,13 @@
 
     <div class="enrol-form container">
         <div class="row container">
-            <div class="col-12 row" style="background-color: aqua;">
-                <h2 class="col-12 col-lg-10 ml-lg-1 col-xxl-8 ml-xxl-2" style="background-color: whitesmoke;">Become A Good Designer From Beginner To <br> Expert Grab This Course Now.</h2>
-                <form class="col-11 col-md-5 ml-md-3 col-lg-7 ml-lg-2 col-xxl-5 ml-xxl-3" style="background-color: rosybrown;">Enter your email</form>
-                <button class="col-1" style="background-color: wheat;">-></button>
-                <span class="col-12 col-lg-8 ml-lg-2 col-xxl-6 ml-xxl-3" style="background-color: gold;">progress line</span>
+            <div class="col-12 row">
+                <h2 class="col-12 col-lg-10 ml-lg-1 col-xxl-8 ml-xxl-2">Become A Good Designer From Beginner To Expert Grab This Course Now.</h2>
+                <form class="col-11 col-md-5 col-lg-7  col-xxl-5 "><input id="enrolInput" class="input" type="email" placeholder=" Enter your email" required;">
+                </form>
+                <button type="submit" class="btn-arrow col-1 reverse"><a href="https://themelooks.us13.list-manage.com/subscribe/post?"><i class="fa fa-long-arrow-right" target="_blank"></i></a>
+                </button>
+                <span id="progressLine" class="animation col-12"></span>
             </div>
         </div>
     </div>
@@ -522,7 +529,7 @@
                     <form>
                         <div class="row footer-subscribe-form">
                             <input class="input" id="email" type="email" placeholder=" Enter your email" required;">
-                            <button type="submit" class="btn stack-top">Subscribe</button>
+                            <button type="submit" class="btn">Subscribe</button>
                         </div>
                     </form>
                 </div>
