@@ -10,7 +10,7 @@ class Carousel1 {
         this.rightArrow = null;
         this.itemsInScrean = 1;
         this.animationInProgress = false;
-        this.animationDuration = 300;
+        this.animationDuration = 500;
         this.visibleItemIndex = 0;
 
         this.init()
@@ -81,7 +81,7 @@ class Carousel1 {
 
 
 
-        const HTML = `  <div class="col-12 col-md-12 col-lg-10">
+        const HTML = `  <div class="header col-12 col-md-12 col-lg-10">
                             <h2>What You'll Learn From This Course</h2>
                         </div>
                         <div class="hidden visible-lg col-lg-2 reverse-lg">
@@ -148,7 +148,7 @@ class Carousel1 {
                     }, this.animationDuration);
                     setTimeout(() => {
                         this.listDOM.style.transition = `all ${this.animationDuration}ms`;
-                    }, this.animationDuration + 40);
+                    }, this.animationDuration + 100);
                 }
                 setTimeout(() => {
                     this.animationInProgress = false;
@@ -171,7 +171,7 @@ class Carousel1 {
                     }, this.animationDuration);
                     setTimeout(() => {
                         this.listDOM.style.transition = `all ${this.animationDuration}ms`;
-                    }, this.animationDuration + 40);
+                    }, this.animationDuration + 100);
                 }
                 setTimeout(() => {
                     this.animationInProgress = false;
