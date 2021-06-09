@@ -1,36 +1,55 @@
 .behindImgTop{
-    display: inline-block;
+    display:inline-block;
     z-index: -1;
-    position:relative;
-    left: -60px;
-    top: -580px;
+    position:absolute;
+    left: 700px;
+    top: 128px;
     visibility: visible;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    
+}
+
+.damnHeroIndex{
+        z-index: 100;
 }
 
 .behindImgBottom{
-    display: inline-block;
+    display:inline;
     z-index: -1;
-    position:relative;
-    left: 340px;
-    top: -420px;
+    position:absolute;
+    left: 1120px;
+    top: 480px;
     transform: rotate(90deg);
+    visibility: visible;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
 }
 
 @media (max-width:1199px) {
   .behindImgBottom{
           display: inline-block;
-              left: 210px;
+    left: 780px;
+    top: 340px;
+  }
+  }
+
+    @media (max-width:1410px) {
+  .behindImgBottom{
+          display: inline-block;
+    left: 760px;
+    top: 310px;
   }
   }
 
   @media (max-width:1199px) {
   .behindImgTop{
           display: inline-block;
-            left: -30px;
-            top: -440px;
+    left: 700px;
+    top: 128px;
   }
   }
-  @media (max-width:988px) {
+  @media (max-width:1086px) {
   .behindImgBottom{
           display: none;
   }
