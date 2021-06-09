@@ -9,6 +9,8 @@ class Carousel1 {
         this.leftArrow = null;
         this.rightArrow = null;
         this.itemsInScrean = 1;
+        this.animationInProgress = false;
+        this.animationDuration = 300;
         this.visibleItemIndex = 0;
 
         this.init()
@@ -134,13 +136,47 @@ class Carousel1 {
         })
 
         this.rightArrow.addEventListener('click', () => {
-            this.visibleItemIndex++;
-            this.carouselAnimarion();
+            if (!this.animationInProgress) {
+                this.animationInProgress = true;
+                this.visibleItemIndex++;
+                this.carouselAnimarion();
+                if (this.data.list.length + this.itemsInScrean === this.visibleItemIndex) {
+                    setTimeout(() => {
+                        this.listDOM.style.transition = 'all 0s';
+                        this.visibleItemIndex = this.itemsInScrean;
+                        this.carouselAnimarion();
+                    }, this.animationDuration);
+                    setTimeout(() => {
+                        this.listDOM.style.transition = `all ${this.animationDuration}ms`;
+                    }, this.animationDuration + 40);
+                }
+                setTimeout(() => {
+                    this.animationInProgress = false;
+                }, this.animationDuration);
+            }
         });
 
+
+
         this.leftArrow.addEventListener('click', () => {
-            this.visibleItemIndex--;
-            this.carouselAnimarion();
+            if (!this.animationInProgress) {
+                this.animationInProgress = true;
+                this.visibleItemIndex--;
+                this.carouselAnimarion();
+                if (this.visibleItemIndex === 0) {
+                    setTimeout(() => {
+                        this.listDOM.style.transition = 'all 0s';
+                        this.visibleItemIndex = this.data.list.length;
+                        this.carouselAnimarion();
+                    }, this.animationDuration);
+                    setTimeout(() => {
+                        this.listDOM.style.transition = `all ${this.animationDuration}ms`;
+                    }, this.animationDuration + 40);
+                }
+                setTimeout(() => {
+                    this.animationInProgress = false;
+                }, this.animationDuration);
+            }
         });
 
 
