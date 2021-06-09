@@ -312,8 +312,103 @@
 /* reviews end */
 
 /* enrol form start */
-.enrol-form {
-  background-color: darkseagreen;
+
+.enrol-form > .row {
+  background-color: var(--color-secondary);
+  border-radius: 25px;
+  box-shadow: 0 2px 8px #0002;
+}
+@media only screen and (max-width: 1200px) {
+  .enrol-form > .row {
+    box-sizing: border-box;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .enrol-form > .row {
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+.enrol-form > .row > .row > h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.enrol-form > .row > .row > #progressLine {
+  box-sizing: border-box;
+  height: 2px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.animation {
+  transition: 1s linear;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.enrol-form > .row > .row > .progress-line:hover {
+  background-color: var(--color-primary);
+}
+.enrol-form > .row > .row > form > .input {
+  background: transparent;
+  box-sizing: border-box;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  top: 0;
+  left: 0;
+  position: relative;
+  font-size: 18px;
+  float: left;
+  width: 100%;
+  border: transparent;
+  cursor: pointer;
+}
+.enrol-form > .row > .row > form > #enrolInput {
+  background: transparent;
+  box-sizing: border-box;
+  height: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  top: 0;
+  left: 0;
+  position: relative;
+  font-size: 18px;
+  float: left;
+  width: 100%;
+  border: transparent;
+  cursor: pointer;
+}
+.btn-arrow {
+  background: transparent;
+  border: none;
+  font-size: large;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.btn-arrow .fa {
+  color: #fff;
+  font-size: large;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.btn-arrow .fa:hover {
+  color: var(--color-primary);
 }
 /* enrol form end */
 
