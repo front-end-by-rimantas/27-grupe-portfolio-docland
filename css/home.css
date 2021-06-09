@@ -28,7 +28,12 @@
 
 /* statistics start */
 .statistics {
-  background-color: darkolivegreen;
+  text-align-last: center;
+  font-size: 20px;
+  line-height: 40px;
+}
+p {
+  color: var(--color-paragraph);
 }
 /* statistics end */
 
