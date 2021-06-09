@@ -1,11 +1,12 @@
 // IMPORT
 import { renderTimer } from './components/timer/timer.js';
-// header import start
-//import { header } from './components/header/Header.js';
-////header();
-//addEventListener('click', () => {
 
-//})
+// header import start
+import { header } from './components/header/Header.js';
+header();
+addEventListener('click', () => {
+})
+
 // header import end
 
 // hero import start
@@ -30,6 +31,8 @@ import { renderAccordion } from './components/accordion/accordion.js';
 // reviews import end
 
 // enrol form import start
+import { progressLine } from './components/enrol-form/enrolForm.js';
+progressLine();
 // enrol form import end
 
 // EXECUTION
