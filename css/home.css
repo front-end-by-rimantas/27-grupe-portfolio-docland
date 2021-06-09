@@ -13,8 +13,13 @@
 
 /* components import */
 @import './components/button.css';
+<<<<<<< HEAD
 @import './components/timer.css';
 @import './components/carouselLearn.css';
+=======
+@import './components/benefit.css';
+@import './components/timer.css';
+>>>>>>> 2fcd56442460ca7d867136c162de456900c83b64
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
