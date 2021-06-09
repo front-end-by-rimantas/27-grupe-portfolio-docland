@@ -5,6 +5,7 @@ class reviewCarousel {
         this.data = data;
 
         this.DOM = null;
+        this.reviewPerView = 1;
 
         this.init();
     }
@@ -15,7 +16,9 @@ class reviewCarousel {
             return false;
         }
 
-        this.render();
+        this.data.reviewPerView = this.data.reviewPerView.sort((a, b) => a.minWidth - b.minWidth);
+        this.reviewPerView = this.calculateReviewsPerViewValue();
+        this.render(this.reviewPerView);
         this.addEvents();
 
     }
@@ -33,9 +36,8 @@ class reviewCarousel {
         return !!this.DOM;
     }
 
-    render() {
+    render(reviewPerView) {
         const reviewsCount = this.data.list.length;
-        const reviewPerView = 2;
         const listWidth = reviewsCount / reviewPerView * 100;
         const reviewWidth = 100 / reviewsCount;
         const singleMargin = 100 / reviewPerView;
@@ -75,17 +77,28 @@ class reviewCarousel {
         </div>`;
 
         this.DOM.innerHTML = HTML;
+    }
 
+    calculateReviewsPerViewValue() {
+        const responsive = this.data.reviewPerView;
+        let reviewsToRender = 1;
+        for (let i = 0; i < responsive.length; i++) {
+            if (innerWidth > responsive[i].minWidth) {
+                reviewsToRender = responsive[i].reviewsCount;
+            }
+        }
+
+        return reviewsToRender;
     }
 
     addEvents() {
-        this.data.reviewPerView = this.data.reviewPerView.sort((a, b) => a.minWidth - b.minWidth);
-
-        const responsive = this.data.reviewPerView;
-        console.log(responsive);
-
         window.addEventListener('resize', () => {
-            console.log('resizing...');
+            const reviewsToRender = this.calculateReviewsPerViewValue();
+            if (this.reviewPerView !== reviewsToRender) {
+                this.render(reviewsToRender);
+                this.reviewPerView = reviewsToRender;
+            }
+
         })
     }
 
