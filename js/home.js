@@ -1,5 +1,8 @@
 // IMPORT
+import { Carousel1 } from './components/carusel/carouselLearn.js';
+import { Interface } from './components/carusel/interfase.js';
 import { renderTimer } from './components/timer/timer.js';
+import { wahtYouLearnData } from './data/wahtYouLearnData.js';
 
 // header import start
 import { header } from './components/header/Header.js';
@@ -17,6 +20,7 @@ renderTimer('#content', '06-13 00:00:00')
 // counter import end
 
 // what-you-learn import start
+new Carousel1('#corouselLearn', Interface, wahtYouLearnData)
 // what-you-learn import end
 
 // syllabus import start
