@@ -1,0 +1,64 @@
+.corouselBenefit {
+    width: 100%;
+}
+
+.corouselBenefit .gallery {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.corouselBenefit > .gallery .list {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+.corouselBenefit .list > .item {
+    width: 100%;
+    float: left;
+    border-radius: 4px;
+    text-align: center;
+    border-radius: 15px;
+    padding-right: 13px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.corouselBenefit .item > img {
+    width: 80%;
+    display: inline-block;
+    margin: 30px;
+}
+
+.corouselBenefit .item > .title {
+display:  block;
+color: white;
+font-size: 25px;
+margin-bottom: 30px;
+font-weight: bolder;
+text-decoration: none;
+}
+
+.shadow1:hover {
+ box-shadow: 1px 7px 20px #929DFF;
+}
+
+.shadow2:hover {
+ box-shadow: 1px 7px 20px rgb(133, 182, 255);
+}
+
+.shadow3:hover {
+ box-shadow: 1px 7px 20px rgb(191, 135, 255);
+}
+
+.shadow4:hover {
+ box-shadow: 1px 7px 20px rgb(255, 203, 135);
+}
+
+.shadow5:hover {
+ box-shadow: 1px 7px 20px rgb(133, 207, 255);
+}
