@@ -116,6 +116,45 @@
   border-radius: 5px;
 }
 
+.syllabus > .syllabus-card {
+  grid-template-rows: 110px 60px 100px 60px 400px;
+  grid-template-areas:
+    'calendar . . . .'
+    'heading heading heading heading heading'
+    'paragraph paragraph paragraph paragraph paragraph'
+    'stats stats stats stats . '
+    'videos videos videos videos videos';
+}
+
+.syllabus > .syllabus-card > .course-videos-overview {
+  /* display: none; */
+  border-top: 1px solid #70707030;
+  padding-top: 10px;
+  grid-area: videos;
+  display: flex;
+  flex-direction: column;
+}
+.syllabus-card > .course-videos-overview > .course-video {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.syllabus-card
+  > .course-videos-overview
+  > .course-video
+  > .course-video-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.syllabus-card > .course-videos-overview > .course-video > img,
+p,
+span,
+button {
+  display: inline-block;
+}
+
 @media (min-width: 575px) /*and (max-width: 767px) */ {
   .syllabus {
     margin: 40px auto;
@@ -214,4 +253,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.syllabus > .syllabus-card > .course-videos-overview.hidden {
+  display: none !important;
 }

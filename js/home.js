@@ -50,6 +50,7 @@ progressLine();
 // what-you-learn execution end
 
 // syllabus execution start
+renderAccordion(syllabusData, 'syllabusWeek1');
 // syllabus execution end
 
 // benefit execution start
