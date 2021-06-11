@@ -25,6 +25,7 @@ function renderTimer(selector, tarderDate) {
         updateTimer(timerAllValue, calcTargetDate(tarderDate))
     }, 1000 / 3)
 
+
 }
 
 export { renderTimer }
