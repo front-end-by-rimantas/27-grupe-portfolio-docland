@@ -1,0 +1,23 @@
+.pricingBoxLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: red;
+  text-align: left;
+}
+.pricingBoxLeft .price {
+  font-size: 20px;
+  margin: 15px;
+  margin-top: 40px;
+}
+
+.pricingBoxLeft strong {
+  font-size: 50px;
+  display: inline-block;
+}
+
+.pricingBoxLeft span {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 15px;
+}

@@ -15,6 +15,7 @@
 @import './components/button.css';
 @import './components/timer.css';
 @import './components/carouselLearn.css';
+@import './components/pricing.css';
 /* CUSTOM STYLES FOR HOME PAGE GOES BELOW THIS COMMENT */
 
 /* header start */
@@ -45,20 +46,20 @@ p {
 /* what you learn start */
 .what-you-learn .header {
   font-family: var(--heading-font);
-  font-weight:700;
+  font-weight: 700;
   font-size: 30px;
 }
 
 .what-you-learn button {
- padding:10px 20px;
- background: #b4f1e5;
- border: 0;
- border-radius: 5px;
- margin-right: 5px;
- font-size: 30px;
- color: #1d7c69;
- cursor: pointer;
- transition: 0.4s;
+  padding: 10px 20px;
+  background: #b4f1e5;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 30px;
+  color: #1d7c69;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .what-you-learn button:hover {
@@ -79,7 +80,12 @@ p {
 
 /* pricing start */
 .pricing {
-  background-color: goldenrod;
+  text-align: center;
+}
+
+.pricing .header {
+  font-size: 40px;
+  font-family: var(--heading-font);
 }
 /* pricing end */
 
