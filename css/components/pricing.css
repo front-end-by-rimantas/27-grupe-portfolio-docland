@@ -1,0 +1,145 @@
+.pricingBoxLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: left;
+  padding: 40px;
+  box-shadow: 1px 1px 10px #ccc;
+  margin-bottom: 40px;
+}
+
+.pricingBoxLeft strong {
+  font-size: 50px;
+  display: inline-block;
+  font-family: var(--heading-font);
+  color: var(--color-secondary);
+}
+
+.pricingBoxLeft span {
+  font-family: var(--heading-font);
+  display: inline-block;
+  color: var(--color-paragraph);
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.pricingBoxLeft p {
+  color: var(--color-paragraph);
+  font-size: larger;
+}
+
+.pricingBoxLeft ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.pricingBoxLeft li {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  width: 90%;
+  font-family: var(--paragraph-font);
+  font-size: 19px;
+}
+
+.pricingBoxLeft i {
+  width: 10%;
+  float: left;
+  color: var(--color-secondary);
+}
+
+.pricingBoxLeft a {
+  width: 60%;
+}
+
+@media (max-width: 765px) {
+  .pricingBoxLeft a {
+    width: 150px;
+  }
+}
+
+.pricingBoxRight {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: var(--color-secondary);
+  border-radius: 15px;
+  text-align: left;
+  padding: 40px;
+  box-shadow: 1px 1px 10px #ccc;
+  margin-bottom: 40px;
+}
+
+.pricingBoxRight strong {
+  font-size: 50px;
+  display: inline-block;
+  font-family: var(--heading-font);
+  color: white;
+  margin-top: 30px;
+}
+
+.pricingBoxRight del {
+  display: inline-block;
+  font-size: 25px;
+  font-family: var(--heading-font);
+  color: #cbfff5;
+  font-weight: bolder;
+}
+
+.pricingBoxRight span {
+  font-family: var(--heading-font);
+  display: inline-block;
+  color: var(--color-paragraph);
+  color: white;
+  font-size: larger;
+}
+
+.pricingBoxRight .pricingActivitiy {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.pricingBoxRight p {
+  color: var(--color-paragraph);
+  font-size: larger;
+}
+
+.pricingBoxRight ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.pricingBoxRight li {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  width: 90%;
+  font-family: var(--paragraph-font);
+  font-size: 19px;
+  color: white;
+}
+
+.pricingBoxRight i {
+  width: 10%;
+  float: left;
+  color: white;
+}
+
+.pricingBoxRight a {
+  width: 60%;
+  background-color: white;
+  color: var(--color-secondary);
+}
+
+.pricingBoxRight a:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+@media (max-width: 765px) {
+  .pricingBoxRight a {
+    width: 150px;
+  }
+}
